@@ -1,0 +1,1 @@
+trial_id,epoch,time_completed,mse,mae,r_2,base_lr,numeric_strat,categorical_strat,weight_decay,batch_size,mlp_blocks,mlp_first_size,mlp_size,mlp_dropout,mlp_activation,mlp_regularizer,output_regularizer,reg_objective
