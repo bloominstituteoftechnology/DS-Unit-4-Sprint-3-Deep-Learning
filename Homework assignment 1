@@ -1,0 +1,1020 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "version": "0.3.2",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Jaavion/DS-Unit-4-Sprint-3-Deep-Learning/blob/master/Homework%20assignment%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Sg1NN6IankPm",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "095a8e41-6296-4008-8fd0-c66d3016cf28"
+      },
+      "source": [
+        "from __future__ import absolute_import, division, print_function, unicode_literals\n",
+        "\n",
+        "import tensorflow as tf\n",
+        "from tensorflow import keras\n",
+        "\n",
+        "import numpy as np\n",
+        "\n",
+        "print(tf.__version__)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1.14.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "eUssi9R2rahv",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "from __future__ import absolute_import, division, print_function, unicode_literals\n",
+        "\n",
+        "import tensorflow as tf\n",
+        "tf.enable_eager_execution()\n",
+        "\n",
+        "import numpy as np\n",
+        "import os\n",
+        "import time"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CaMSyJixnlBw",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "846cf2ec-9c86-4146-be6f-f4817e8de1b3"
+      },
+      "source": [
+        "from keras.utils.data_utils import get_file\n",
+        "path = get_file('100-.txt', \n",
+        "                'https://www.gutenberg.org/files/100/100-0.txt')\n"
+      ],
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Downloading data from https://www.gutenberg.org/files/100/100-0.txt\n",
+            "5791744/5784591 [==============================] - 1s 0us/step\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "HHfmczPWqk87",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "path_to_file = tf.keras.utils.get_file('100-0.txt', 'https://www.gutenberg.org/files/100/100-0.txt')"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lAqf01eXpD3W",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "text = open(path_to_file, 'rb').read().decode(encoding='utf-8')\n",
+        "\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SGNheoKCpfBq",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "5186f10c-f98b-4e89-8b0c-cae24e61c8af"
+      },
+      "source": [
+        "print ('Length of text: {} characters'.format(len(text)))\n"
+      ],
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Length of text: 5750559 characters\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kac-TwbXpr34",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 136
+        },
+        "outputId": "1b083e16-1f0e-4960-c438-9493a12fb475"
+      },
+      "source": [
+        "print(text[:250])"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "﻿\r\n",
+            "Project Gutenberg’s The Complete Works of William Shakespeare, by William\r\n",
+            "Shakespeare\r\n",
+            "\r\n",
+            "This eBook is for the use of anyone anywhere in the United States and\r\n",
+            "most other parts of the world at no cost and with almost no restrictions\r\n",
+            "whatsoever. \n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ahgZ63VUpvwb",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "vocab = sorted(set(text))"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2O41MAHkty-T",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "b4b9fd84-a2f5-48ba-f634-03de51f12691"
+      },
+      "source": [
+        "print('{} unique set of characters'.format(len(vocab)))"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "108 unique set of characters\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "-hlPDuZOt6ut",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#create a mapping \n",
+        "char2idx = {u:i for i, u in enumerate(vocab)}\n",
+        "idx2char = np.array(vocab)\n",
+        "\n",
+        "text_as_int = np.array([char2idx[c] for c in text])"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t18SS41Kvbo5",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 408
+        },
+        "outputId": "9ce7e602-2f67-421f-ae71-50a1286f12c3"
+      },
+      "source": [
+        "print('{')\n",
+        "for char,_ in zip(char2idx, range(20)):\n",
+        "    print('  {:4s}: {:3d},'.format(repr(char), char2idx[char]))\n",
+        "print('  ...\\n}')"
+      ],
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{\n",
+            "  '\\t':   0,\n",
+            "  '\\n':   1,\n",
+            "  '\\r':   2,\n",
+            "  ' ' :   3,\n",
+            "  '!' :   4,\n",
+            "  '\"' :   5,\n",
+            "  '#' :   6,\n",
+            "  '$' :   7,\n",
+            "  '%' :   8,\n",
+            "  '&' :   9,\n",
+            "  \"'\" :  10,\n",
+            "  '(' :  11,\n",
+            "  ')' :  12,\n",
+            "  '*' :  13,\n",
+            "  ',' :  14,\n",
+            "  '-' :  15,\n",
+            "  '.' :  16,\n",
+            "  '/' :  17,\n",
+            "  '0' :  18,\n",
+            "  '1' :  19,\n",
+            "  ...\n",
+            "}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YCyQTHtsvd0I",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "74c43f49-bc91-4a51-cb0a-2b418a829ec8"
+      },
+      "source": [
+        "print ('{} ---- characters mapped to int ---- > {}'.format(repr(text[:13]), text_as_int[:13]))\n"
+      ],
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "'\\ufeff\\r\\nProject Gu' ---- characters mapped to int ---- > [107   2   1  47  80  77  72  67  65  82   3  38  83]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "563Ko9Vjvmf-",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 544
+        },
+        "outputId": "71a78140-d089-4e15-f85a-ff527b579ca7"
+      },
+      "source": [
+        "# The maximum length sentence we want for a single input in characters\n",
+        "seq_length = 100\n",
+        "examples_per_epoch = len(text)//seq_length\n",
+        "\n",
+        "# Create training examples / targets\n",
+        "char_dataset = tf.data.Dataset.from_tensor_slices(text_as_int)\n",
+        "\n",
+        "for i in char_dataset.take(30):\n",
+        "  print(idx2char[i.numpy()])"
+      ],
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "﻿\n",
+            "\r\n",
+            "\n",
+            "\n",
+            "P\n",
+            "r\n",
+            "o\n",
+            "j\n",
+            "e\n",
+            "c\n",
+            "t\n",
+            " \n",
+            "G\n",
+            "u\n",
+            "t\n",
+            "e\n",
+            "n\n",
+            "b\n",
+            "e\n",
+            "r\n",
+            "g\n",
+            "’\n",
+            "s\n",
+            " \n",
+            "T\n",
+            "h\n",
+            "e\n",
+            " \n",
+            "C\n",
+            "o\n",
+            "m\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Zp6qCOa764Yd",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "xzDVB66N6w3V",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LiITEtCQv3QH",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 122
+        },
+        "outputId": "ecdd0029-0b5c-4a93-acc3-507c9e5a9e50"
+      },
+      "source": [
+        "sequences = char_dataset.batch(seq_length+1, drop_remainder=True)\n",
+        "\n",
+        "for item in sequences.take(5):\n",
+        "  print(repr(''.join(idx2char[item.numpy()])))"
+      ],
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "'\\ufeff\\r\\nProject Gutenberg’s The Complete Works of William Shakespeare, by William\\r\\nShakespeare\\r\\n\\r\\nThis eBo'\n",
+            "'ok is for the use of anyone anywhere in the United States and\\r\\nmost other parts of the world at no co'\n",
+            "'st and with almost no restrictions\\r\\nwhatsoever.  You may copy it, give it away or re-use it under the'\n",
+            "' terms\\r\\nof the Project Gutenberg License included with this eBook or online at\\r\\nwww.gutenberg.org.  I'\n",
+            "'f you are not located in the United States, you’ll\\r\\nhave to check the laws of the country where you a'\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wkicRMV166ZR",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def split_input_target(chunk):\n",
+        "    input_text = chunk[:-1]\n",
+        "    target_text = chunk[1:]\n",
+        "    return input_text, target_text\n",
+        "\n",
+        "dataset = sequences.map(split_input_target)\n",
+        "\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zVYi54nXwClG",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "d555e412-e46f-4c6f-8242-deda536953ed"
+      },
+      "source": [
+        "for input_example, target_example in  dataset.take(1):\n",
+        "  print ('Input data: ', repr(''.join(idx2char[input_example.numpy()])))\n",
+        "  print ('Target data:', repr(''.join(idx2char[target_example.numpy()])))"
+      ],
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Input data:  '\\ufeff\\r\\nProject Gutenberg’s The Complete Works of William Shakespeare, by William\\r\\nShakespeare\\r\\n\\r\\nThis eB'\n",
+            "Target data: '\\r\\nProject Gutenberg’s The Complete Works of William Shakespeare, by William\\r\\nShakespeare\\r\\n\\r\\nThis eBo'\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ov7M0B026-WD",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 272
+        },
+        "outputId": "8189af98-a47e-486a-cc8a-9679a50eb660"
+      },
+      "source": [
+        "for i, (input_idx, target_idx) in enumerate(zip(input_example[:5], target_example[:5])):\n",
+        "    print(\"Step {:4d}\".format(i))\n",
+        "    print(\"  input: {} ({:s})\".format(input_idx, repr(idx2char[input_idx])))\n",
+        "    print(\"  expected output: {} ({:s})\".format(target_idx, repr(idx2char[target_idx])))"
+      ],
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Step    0\n",
+            "  input: 107 ('\\ufeff')\n",
+            "  expected output: 2 ('\\r')\n",
+            "Step    1\n",
+            "  input: 2 ('\\r')\n",
+            "  expected output: 1 ('\\n')\n",
+            "Step    2\n",
+            "  input: 1 ('\\n')\n",
+            "  expected output: 47 ('P')\n",
+            "Step    3\n",
+            "  input: 47 ('P')\n",
+            "  expected output: 80 ('r')\n",
+            "Step    4\n",
+            "  input: 80 ('r')\n",
+            "  expected output: 77 ('o')\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "g66wWfCA7CFH",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "a9b5642b-3fcb-4201-bc96-8a619b10e20a"
+      },
+      "source": [
+        "# Batch size\n",
+        "BATCH_SIZE = 64\n",
+        "steps_per_epoch = examples_per_epoch//BATCH_SIZE\n",
+        "\n",
+        "# Buffer size to shuffle the dataset\n",
+        "# (TF data is designed to work with possibly infinite sequences,\n",
+        "# so it doesn't attempt to shuffle the entire sequence in memory. Instead,\n",
+        "# it maintains a buffer in which it shuffles elements).\n",
+        "BUFFER_SIZE = 10000\n",
+        "\n",
+        "dataset = dataset.shuffle(BUFFER_SIZE).batch(BATCH_SIZE, drop_remainder=True)\n",
+        "\n",
+        "dataset"
+      ],
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<DatasetV1Adapter shapes: ((64, 100), (64, 100)), types: (tf.int64, tf.int64)>"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 37
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "WECUUih47Id1",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Length of the vocabulary in chars\n",
+        "vocab_size = len(vocab)\n",
+        "\n",
+        "# The embedding dimension\n",
+        "embedding_dim = 256\n",
+        "\n",
+        "# Number of RNN units\n",
+        "rnn_units = 1024"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TlZ3CxLH7LKk",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "if tf.test.is_gpu_available():\n",
+        "  rnn = tf.keras.layers.CuDNNGRU\n",
+        "else:\n",
+        "  import functools\n",
+        "  rnn = functools.partial(\n",
+        "    tf.keras.layers.GRU, recurrent_activation='sigmoid')"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lqNt7AEV7M4F",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def build_model(vocab_size, embedding_dim, rnn_units, batch_size):\n",
+        "  model = tf.keras.Sequential([\n",
+        "    tf.keras.layers.Embedding(vocab_size, embedding_dim,\n",
+        "                              batch_input_shape=[batch_size, None]),\n",
+        "    rnn(rnn_units,\n",
+        "        return_sequences=True,\n",
+        "        recurrent_initializer='glorot_uniform',\n",
+        "        stateful=True),\n",
+        "    tf.keras.layers.Dense(vocab_size)\n",
+        "  ])\n",
+        "  return model"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qFGYzs3A7OnR",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "model = build_model(\n",
+        "  vocab_size = len(vocab),\n",
+        "  embedding_dim=embedding_dim,\n",
+        "  rnn_units=rnn_units,\n",
+        "  batch_size=BATCH_SIZE)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "bqs2S7lc7QFs",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "abdc08f5-4852-43f0-c1e0-f7574234de88"
+      },
+      "source": [
+        "for input_example_batch, target_example_batch in dataset.take(1):\n",
+        "  example_batch_predictions = model(input_example_batch)\n",
+        "  print(example_batch_predictions.shape, \"# (batch_size, sequence_length, vocab_size)\")"
+      ],
+      "execution_count": 42,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "(64, 100, 108) # (batch_size, sequence_length, vocab_size)\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "U4WJi_677R6J",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 255
+        },
+        "outputId": "0d2379ce-c836-457e-d1fc-d2b0a85c069a"
+      },
+      "source": [
+        "model.summary()\n"
+      ],
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Model: \"sequential\"\n",
+            "_________________________________________________________________\n",
+            "Layer (type)                 Output Shape              Param #   \n",
+            "=================================================================\n",
+            "embedding (Embedding)        (64, None, 256)           27648     \n",
+            "_________________________________________________________________\n",
+            "gru (GRU)                    (64, None, 1024)          3935232   \n",
+            "_________________________________________________________________\n",
+            "dense (Dense)                (64, None, 108)           110700    \n",
+            "=================================================================\n",
+            "Total params: 4,073,580\n",
+            "Trainable params: 4,073,580\n",
+            "Non-trainable params: 0\n",
+            "_________________________________________________________________\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "p-Yi726B7c4c",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "sampled_indices = tf.random.categorical(example_batch_predictions[0], num_samples=1)\n",
+        "sampled_indices = tf.squeeze(sampled_indices,axis=-1).numpy()"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3cZ4xJiT7V72",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 153
+        },
+        "outputId": "ed99dca9-66ad-40db-a0eb-5d2d3616526b"
+      },
+      "source": [
+        "sampled_indices\n"
+      ],
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([ 79,  74, 106,  69,  88,   3,  24,  28,  71,  37, 105,  27,  90,\n",
+              "        90,  89,  69,  43,  60, 106,  29,  18,  49,  61,  82,  45,  48,\n",
+              "        91,  23,  62,  38,  37,  90, 100,  60,   1,  13,  90, 104,  31,\n",
+              "       105,  43,  12,  22,  58,  41,  18,  98,  87,  71,  82,  46,  77,\n",
+              "        44,   1,  22,  96,  84,  52,  93,  70,  60, 103,  75,  47,  96,\n",
+              "        57,  45,  94,  50,  58,  64,  63, 107, 106,  22,  35,  47, 106,\n",
+              "        20,  59,  78,  18,  33,  86,  41,  13,  67,  67,  18,  18,  21,\n",
+              "        17,  73,  49,  13,  99,  54,  64,  45,  35])"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 45
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "paZ229W-7iSw",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 122
+        },
+        "outputId": "c993c805-4e30-476d-f4e0-9778416b5309"
+      },
+      "source": [
+        "print(\"Input: \\n\", repr(\"\".join(idx2char[input_example_batch[0]])))\n",
+        "print()\n",
+        "print(\"Next Char Predictions: \\n\", repr(\"\".join(idx2char[sampled_indices ])))"
+      ],
+      "execution_count": 46,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Input: \n",
+            " ' say hereafter\\r\\nBut I am truest speaker! You call’d me brother,\\r\\nWhen I was but your sister: I you b'\n",
+            "\n",
+            "Next Char Predictions: \n",
+            " 'ql”gz 6:iF“9}}|gL]”;0R_tNQÆ5`GF}î]\\n*}’@“L)4[J0éyitOoM\\n4çvUàh]‘mPçZNâS[ba\\ufeff”4DP”2\\\\p0BxJ*ee003/kR*êWbND'\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "yy474FyY7kzA",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "b1c9f38b-3de4-4cd4-f3b1-421af9b00bde"
+      },
+      "source": [
+        "def loss(labels, logits):\n",
+        "  return tf.keras.losses.sparse_categorical_crossentropy(labels, logits, from_logits=True)\n",
+        "\n",
+        "example_batch_loss  = loss(target_example_batch, example_batch_predictions)\n",
+        "print(\"Prediction shape: \", example_batch_predictions.shape, \" # (batch_size, sequence_length, vocab_size)\")\n",
+        "print(\"scalar_loss:      \", example_batch_loss.numpy().mean())"
+      ],
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Prediction shape:  (64, 100, 108)  # (batch_size, sequence_length, vocab_size)\n",
+            "scalar_loss:       4.682171\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "FHGSTaYP7rcE",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "model.compile(\n",
+        "    optimizer = tf.train.AdamOptimizer(),\n",
+        "    loss = loss)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_dEA2mOp7tpp",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Directory where the checkpoints will be saved\n",
+        "checkpoint_dir = './training_checkpoints'\n",
+        "# Name of the checkpoint files\n",
+        "checkpoint_prefix = os.path.join(checkpoint_dir, \"ckpt_{epoch}\")\n",
+        "\n",
+        "checkpoint_callback=tf.keras.callbacks.ModelCheckpoint(\n",
+        "    filepath=checkpoint_prefix,\n",
+        "    save_weights_only=True)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "3mny-nj97vFa",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "EPOCHS=30\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rLrmeJj07xSK",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "59f94bbd-6580-422d-cccd-e85d7b3baf34"
+      },
+      "source": [
+        "history = model.fit(dataset.repeat(), epochs=EPOCHS, steps_per_epoch=steps_per_epoch, callbacks=[checkpoint_callback])\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Epoch 1/30\n",
+            " 32/898 [>.............................] - ETA: 2:23:27 - loss: 3.2401"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "vpJ4cdch71KV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "tf.train.latest_checkpoint(checkpoint_dir)\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "f3T2igzW73LX",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "model = build_model(vocab_size, embedding_dim, rnn_units, batch_size=1)\n",
+        "\n",
+        "model.load_weights(tf.train.latest_checkpoint(checkpoint_dir))\n",
+        "\n",
+        "model.build(tf.TensorShape([1, None]))"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fXGa0V9i7yrS",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "model.summary()\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "YZVKO7sL7-Qz",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "def generate_text(model, start_string):\n",
+        "  # Evaluation step (generating text using the learned model)\n",
+        "\n",
+        "  # Number of characters to generate\n",
+        "  num_generate = 1000\n",
+        "\n",
+        "  # Converting our start string to numbers (vectorizing)\n",
+        "  input_eval = [char2idx[s] for s in start_string]\n",
+        "  input_eval = tf.expand_dims(input_eval, 0)\n",
+        "\n",
+        "  # Empty string to store our results\n",
+        "  text_generated = []\n",
+        "\n",
+        "  # Low temperatures results in more predictable text.\n",
+        "  # Higher temperatures results in more surprising text.\n",
+        "  # Experiment to find the best setting.\n",
+        "  temperature = 1.0\n",
+        "\n",
+        "  # Here batch size == 1\n",
+        "  model.reset_states()\n",
+        "  for i in range(num_generate):\n",
+        "      predictions = model(input_eval)\n",
+        "      # remove the batch dimension\n",
+        "      predictions = tf.squeeze(predictions, 0)\n",
+        "\n",
+        "      # using a multinomial distribution to predict the word returned by the model\n",
+        "      predictions = predictions / temperature\n",
+        "      predicted_id = tf.multinomial(predictions, num_samples=1)[-1,0].numpy()\n",
+        "\n",
+        "      # We pass the predicted word as the next input to the model\n",
+        "      # along with the previous hidden state\n",
+        "      input_eval = tf.expand_dims([predicted_id], 0)\n",
+        "\n",
+        "      text_generated.append(idx2char[predicted_id])\n",
+        "\n",
+        "  return (start_string + ''.join(text_generated))"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SNJ_gRwp8LD0",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "print(generate_text(model, start_string=u\"ROMEO: \"))\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "J4HNhujW8MVS",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
