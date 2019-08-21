@@ -93,23 +93,27 @@ dependencies:
     - feedparser==5.2.1
     - google-images-download==2.8.0
     - idna==2.8
+    - imageio==2.5.0
     - jieba3k==0.35.1
     - joblib==0.13.2
     - lxml==4.3.4
+    - networkx==2.3
     - newspaper3k==0.2.8
     - nltk==3.4.4
     - numpy==1.16.2
     - pillow==6.1.0
+    - pywavelets==1.0.3
     - pyyaml==5.1.1
     - requests==2.22.0
     - requests-file==1.4.3
+    - scikit-image==0.15.0
     - scikit-learn==0.21.2
     - selenium==3.141.0
     - soupsieve==1.9.2
+    - tensorflow-hub==0.5.0
     - tinysegmenter==0.3
     - tldextract==2.2.1
     - tqdm==4.32.2
     - twitterscraper==1.2.0
     - urllib3==1.25.3
 prefix: /Users/jonathansokoll/anaconda3/envs/U4-S3-DNN
-
