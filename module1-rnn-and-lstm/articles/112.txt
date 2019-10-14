@@ -1,0 +1,41 @@
+We encourage new and innovative uses of our content, and we want our readers to have access to our content in a wide variety of different ways. We therefore make our content available through RSS feeds for personal use (e.g., in a news reader), for many commercial purposes, or for any other form of distribution to a third party.
+
+However , all use of our RSS feeds is subject to our User Agreement and to the terms and conditions below. If you have questions or concerns about any of these terms – or if you wish to use an RSS feed in a manner inconsistent with any provision below (e.g., on a mobile device for commercial purposes or redistribution, or with your own advertising) – please do not hesitate to contact us at rss@washpost.com. We will be happy to discuss your ideas and to work with you to try to meet your requests.
+
+a. For any article, you may not display more text than we provide in the RSS feed.
+
+b. All text from our RSS feed must displayed in the manner in which we provide the text. You may not edit, translate, or reformat the content that we provide. You must retain all links to the original Washington Post article on washingtonpost.com, as well as any other hyperlinks or notices in the feed.
+
+c. You must ensure that all excerpts link directly to washingtonpost.com, and you may not insert interstitial, splash, intermediate pages or any other content or advertising in connection with our RSS feed, or between any display of our RSS feed and our website.
+
+d. Any photographs or other images that you display must be low-resolution and in a size no greater than 60x60.
+
+e. You must retain in original form the attribution and by-line provided in the RSS feed, and must prominently credit The Washington Post in connection with each RSS excerpt that you publish.
+
+f. Except for your own individual, personal use, you may not display our RSS feed on a mobile device, defined as any portable device using wireless technology to receive content, data, and/or other information (including within a mobile application or on a mobile website).
+
+g. You may not aggregate or otherwise use articles and/or excerpts from our RSS feed in a manner that could reasonably serve as a substitute for our original content or could otherwise diminish the value of the content of The Washington Post. For instance, you may not publish a webpage that simply aggregate the RSS feeds of all Washington Post politics articles and sell advertising against that page.
+
+h. You may not strip advertising from our RSS feeds, nor serve your own advertising within or against our RSS feeds.
+
+i. You may not sell, lease, sublicense, redistribute or otherwise monetize our RSS feeds.
+
+j. You may not display the name, logo, trademark or other identifier of another person or entity in connection with our RSS feeds in a manner that could reasonably indicate that such other person or entity is affiliated with our RSS feeds.
+
+k. You may not display the RSS feeds on any website or in any other way that could reasonably damage the brand or reputation of The Washington Post. For instance, you may not publish our RSS feed on or in connection with any website that infringes upon or violates the copyrights, trademarks or other intellectual property rights of any person; is libelous or defamatory; is obscene, pornographic, or sexually explicit; violates a person's right to privacy; violates any local, state, national, or international law; contains or advocates illegal or violent acts; degrades others on the basis of gender, race, class, ethnicity, national origin, religion, sexual orientation, disability, or other classification; or is predatory, hateful, or intended to intimidate or harass.
+
+l. You must provide us with complete and accurate registration information in order to use our RSS feeds.
+
+m. You will promptly remove our RSS feeds upon our request, and will not store or archive any of our feeds.
+
+We are not liable for your use of our RSS feeds or any related activity.
+
+
+
+We may limit, suspend, or terminate your access to and use of our RSS feeds at any time at our sole discretion.
+
+We retain all ownership and other rights in the RSS content, and in any and all Washington Post logos and trademarks used in connection with the RSS feeds.
+
+BY DOWNLOADING AN RSS FEED, YOU HEREBY ACKNOWLEDGE THAT YOU UNDERSTAND AND AGREE TO BE BOUND BY THESE TERMS. WE RESERVE THE RIGHT TO CHANGE ANY OF THESE TERMS AT OUR SOLE DISCRETION. YOUR CONTINUED USE OF OUR SERVICE CONSTITUTES ACCEPTANCE OF ANY SUCH CHANGES.
+
+If you have questions about use of our RSS feeds, or to request our permission to deviate from the requirements set forth above, including using our feeds in mobile products or on any mobile platform, please contact us at rss@washpost.com.
