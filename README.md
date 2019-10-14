@@ -1,5 +1,5 @@
 # Unit 4 Sprint 3: Major Neural Network Architectures
-
+## SNH
 This week we will review several popular feed-forward neural network architectures that are common in commercial applications. 
 --- 
 * Module 1: RNNs & LSTMs
