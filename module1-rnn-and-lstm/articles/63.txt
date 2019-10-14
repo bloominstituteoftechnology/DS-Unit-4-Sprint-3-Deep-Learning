@@ -1,0 +1,129 @@
+Ctrl + N
+
+Airbnb co-founder and CEO Brian Chesky. (Eric Risberg/AP)
+
+Lawmakers seeking to overhaul Silicon Valley's prized legal shield are getting more ammunition.
+
+Fair-housing advocates are accusing Airbnb and other short-term rental platforms of abusing the legal provision that grants tech companies broad immunity for content people post on its platforms. They want Congress to ensure online rental services cannot ignore — and profit off— listings that violate state and local housing laws.
+
+“These companies are knowingly facilitating and profiting from illegal listings all-the-while driving up the cost and access to housing and they must be held accountable,” the groups wrote to members of Congress last week.
+
+Most of the debate over Congress reviewing of Section 230 of the Communications Decency Act has focused on social media companies: Republicans argue they're using the law to unfairly silence conservative voices and Democrats say the act should be changed to ensure social media giants take greater responsibility for disinformation and other problematic content.
+
+But this latest attack, coming just days before a House Energy and Commerce joint subcommittee hearing to examine the decades-old law, shows that changes could have consequences for other tech platforms such as online marketplaces.
+
+The groups, led by the progressive group American Family Voices, are urging Congress to pass the Protecting Local Authority and Neighborhoods Act, which would clarify the law’s application in this case — and make Airbnb responsible for illegal listings posted on its site.
+
+“The Airbnb model essentially says, we don't care whether your vacation rental is illegal, we don't care whether your vacation rental is disrupting neighborhoods, we don't care if your vacation rental is jacking up housing prices and removing inventory from the local community,” said Rep. Ed Case (D-Hawaii), a former hotel executive who introduced the PLAN Act, which is being considered by the full committee. “That model has had serious negative effects on communities across the country.”
+
+But Airbnb says the bill is nothing more than a ploy by the hotel lobby to stifle competition and that it “knowingly ignores” the company's record of reaching compromises with cities to enforce short-term rental rules and collect taxes.
+
+“The protections and authority provided by [Section 230] make it possible for 7 million listings to operate on the Airbnb marketplace, fueling innovation and competition that benefits consumers to the tune of 2 million stays a night globally,” Airbnb spokeswoman Molly Weedn wrote in a statement, adding that the company partners with more than 500 local governments and organizations around the world. “Furthermore, CDA 230 ensures Airbnb is able to screen content and block objectionable material.”
+
+Google and Reddit — whose representatives will testify at Wednesday’s hearing — and other companies have also long pointed to Section 230 as essential to their ability to moderate content.
+
+But the situation is even more complicated for online marketplaces such as Airbnb and even eBay, which argue that the immunity exempts them from being held liable for transactions by their users that violate state and local laws.
+
+Airbnb has put this defense to the test, with mixed results. The company sued both Santa Monica, Calif., and Boston over regulations that compelled the company to enforce and monitor illegal listings.
+
+Airbnb settled with Boston last month in a compromise that required residents seeking to rent their properties to prove they had permission to do so from the city, and for the company to develop stronger channels for the city to notify Airbnb of illegal listings. It reached a similar compromise with the city of Portland, Ore., in September.
+
+But in Santa Monica a federal judge sided with the city, ruling in March that while the content of Airbnb listings are protected by Section 230, any illegal activity facilitated — in this case, a violation of a short-term rentals law — was not. Last week the same court upheld the ruling in another challenge against the Santa Monica ordinance brought by an Airbnb host.
+
+Some lawyers say this shows the PLAN Act is unnecessary. Cities and states have demonstrated that they can rein in short-term rentals and come up with compromises through existing legal channels, argues Santa Clara University law professor Eric Goldman.
+
+And putting in place specific carve-outs to Section 230 would make it more difficult for tech companies, including Airbnb, to take down harmful or illegal content at will, he says.
+
+“Each hole in Section 230 creates its own challenge to the integrity of Section 230,” Goldman says.
+
+But not all legal experts agree that allowing the conflicts between cities and Airbnb to play out in court is the solution.
+
+Abbey Stemler, an assistant professor of business law and ethics at Indiana University who wrote an amicus brief for Santa Monica in the 9th Circuit case, said Airbnb’s use of Section 230 “stretched beyond recognition” of the original intent of the law.
+
+While Stemler expressed concerns about the PLAN Act specifically as the solution, she said that Congress could do more to clarify the intent of the law.
+
+“I definitely think that the court system is too slow. Lawmakers have a better chance of deterring the harmful market failures associated with these platforms,” Stemler says. “If the platform is making money off something illegal, then it should be pretty simple to hold the platforms accountable for it.”
+
+You are reading The Technology 202, our guide to the intersection of technology and politics. Not a regular subscriber?
+
+BITS, NIBBLES AND BYTES
+
+Democratic presidential candidate Sen. Elizabeth Warren, D-Mass.(AP Photo/Ringo H.W. Chiu, File)
+
+BITS: Democratic candidate Sen. Elizabeth Warren (D-Mass.) escalated her campaign against Faceboook's political advertising policies this weekend, running deliberately misleading ads about Facebook on the platform that compelled the company to fire back over Twitter. The public battle between the tech giant and the Democratic front-runner could become a subject of interest at this week's Democratic debate.
+
+Warren's ad, which begins by claiming that the company and CEO Mark Zuckerberg have endorsed President Trump, goes on to explain that readers that isn't true. She alleges "what Zuckerberg *has* done is given Donald Trump free rein to lie on his platform — and then to pay Facebook gobs of money to push out their lies to American voters."
+
+We intentionally made a Facebook ad with false claims and submitted it to Facebook’s ad platform to see if it’d be approved. It got approved quickly and the ad is now running on Facebook. Take a look: pic.twitter.com/7NQyThWHgO — Elizabeth Warren (@ewarren) October 12, 2019
+
+Facebook's September announcement that it would not fact check politicians or their ads has come under intense scrutiny from both Warren and former vice president Joe Biden. The company decided to allow Trump’s re-election campaign to run an ad with false claims about former Biden and his son.
+
+But Facebook maintains that it isn't the company's role to intervene with political speech, it responded to Warren on Twitter on Saturday night, pointing out that television stations had in fact run the Trump ad in question. "[Federal Communications Commission] doesn’t want broadcast companies censoring candidates’ speech. We agree it’s better to let voters — not companies — decide.”
+
+@ewarren looks like broadcast stations across the country have aired this ad nearly 1,000 times, as required by law. FCC doesn’t want broadcast companies censoring candidates’ speech. We agree it’s better to let voters—not companies—decide. #FCC #candidateuse https://t.co/WlWePjh1vZ — Facebook Newsroom (@fbnewsroom) October 12, 2019
+
+Warren said the response "proved her point."
+
+You’re making my point here. It’s up to you whether you take money to promote lies. You can be in the disinformation-for-profit business, or you can hold yourself to some standards. In fact, those standards were in your policy. Why the change? https://t.co/CE766Jpwoo — Elizabeth Warren (@ewarren) October 13, 2019
+
+Logos for MasterCard and Visa credit cards at the entrance of a New York coffee shop. Visa and Mastercard are dropping out of Facebook’s Libra project. (AP Photo/Mark Lennihan, File)
+
+NIBBLES: Visa, Mastercard, Stripe and eBay have withdrawn from Facebook's cryptocurrency coalition, Libra, casting doubt on the future of the project, the Wall Street Journal's AnnaMaria Andriotis and Peter Rudegeair report. Facebook is continuing an uphill battle to defend the project to regulators, with Facebook CEO Mark Zuckerberg slated to testify about the cryptocurrency project in front of Congress next Wednesday.
+
+PayPal also left the consortium last week. The Treasury Department sent letters to Mastercard, PayPal, Stripe and Visa asking for a complete overview of how the cryptocurrency consortium would fit into their compliance programs, AnnaMaria and Peter report.
+
+David Marcus, the Facebook executive overseeing the project, wrote that he “respected” the companies' decisions to wait for more regulatory certainty around the project. He cautioned against "reading into the fate of Libra" based on the news. Remaining members of the coalition will meet today in Geneva to hammer out details of the company's charter.
+
+I would caution against reading the fate of Libra into this update. Of course, it’s not great news in the short term, but in a way it’s liberating. Stay tuned for more very soon. Change of this magnitude is hard. You know you’re on to something when so much pressure builds up. — David Marcus (@davidmarcus) October 11, 2019
+
+Bill Gates, billionaire and co-chair of the Bill and Melinda Gates Foundation (Photographer: Jason Alden/Bloomberg
+
+BYTES: Microsoft co-founder Bill Gates met with convicted sex offender Jeffrey Epstein "on numerous occasions," flying on his private plane and meeting in his Manhattan home, the New York Times's Emily Flitter and James B. Stewart report. Gates previously told the Wall Street Journal he didn't have any “business relationship or friendship,” with Epstein, who committed suicide in prison. Gates is just the latest prominent member of the tech community whose ties with the notorious financier have drawn scrutiny.
+
+Documents reviewed by the Times show that Gates met with Epstein multiple times starting in 2011 and also arranged for Gates Foundation employees to meet with Epstein about fundraising. “His lifestyle is very different and kind of intriguing although it would not work for me,” Gates emailed colleagues in 2011. Their meetings continued into 2014, though the relationship seems to have cooled after it became clear Epstein would be unable to deliver on a charitable fund for the Gates Foundation. Gates Foundation employees told the Times that officials maintained contact with Epstein until 2017, though a representative for Bill Gates was unaware of such communication.
+
+“Bill Gates regrets ever meeting with Epstein and recognizes it was an error in judgment to do so,” Bridgitt Arnold, a spokeswoman for Gates, told the Times. “Gates recognizes that entertaining Epstein’s ideas related to philanthropy gave Epstein an undeserved platform that was at odds with Gates’s personal values and the values of his foundation.”
+
+PUBLIC CLOUD
+
+— News from the public sector:
+
+Technology What you do on the Internet is worth a lot. Exactly how much, nobody knows. U.S. officials are struggling to quantify the value of digital activities and integrate those numbers into public policy. Marie C. Baca
+
+Congress Probes Bot-Generated Social-Media Messages About E-Cigarettes A congressional committee and the Massachusetts attorney general are investigating whether millions of bot-generated social-media messages about e-cigarettes have misled consumers about safety and health. Wall Street Journal
+
+New San Francisco Office Could Curb 'Reckless' Rollouts of Emerging Tech Supervisor Norman Yee wants to forestall bumpy rollouts — like that of electric scooters by startups Lime, Bird and Spin — through the creation of a new city agency to evaluate proposals for new tech or services. KQED
+
+Civil liberties groups sound alarm over online extremism bill Civil liberties and technology groups have been sharply critical of a draft bill from House Homeland Security Committee Democrats on dealing with online extremism, saying it would violate First Amendment rights and could result in the surveillance of vulnerable communities. The Hill
+
+PRIVATE CLOUD
+
+— News from the private sector:
+
+Google Shuts Out Payday Loans With App-Store Ban Google has barred high-interest consumer loan services from the Google Play app store, limiting payday lenders’ ability to access users of Android devices. Wall Street Journal
+
+SoftBank is reportedly seeking to take control of WeWork through a financing package The potential deal would shift Neumann's already diminished voting power to the Japanese conglomerate, according to the Journal. CNBC
+
+FAST FWD
+
+— News about tech workforce and culture:
+
+Instacart Delivery Workers Are Planning a Three Day Strike In November, Instacart workers across the country will disrupt operations of the grocery delivery app by cancelling and refusing to take orders. Vice
+
+#TRENDING
+
+— Tech news generating buzz around the Web:
+
+Is Amazon Unstoppable? Politicians want to rein in the retail giant. But Jeff Bezos, the master of cutthroat capitalism, is ready to fight back. The New Yorker
+
+Can an AI System Be Given a Patent? An artificially intelligent system purportedly has created two new products. Now patent offices must decide if it can be named as the inventor. Wall Street Journal
+
+How Photos of Your Kids Are Powering Surveillance Technology Millions of Flickr images were sucked into a database called MegaFace. Now some of those faces may have the ability to sue. The New York Times
+
+@MENTIONS
+
+Brooke Oberwetter is now head of community affairs at Amazon. She was formerly manager of public policy at Facebook. (Amazon chief executive Jeff Bezos also owns The Post.)
+
+CHECK-INS
+
+— Coming up:

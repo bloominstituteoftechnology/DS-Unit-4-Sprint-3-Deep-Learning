@@ -1,0 +1,39 @@
+We are all full of mucus, and not only because cold season is upon us. Our bodies produce a fresh liter of slime each day to coat our passages and tracts. Mucus may be gross, but its grossness disguises how helpful it is.
+
+A study published Monday in Nature Microbiology demonstrates one of mucus’ unexpected beneficial properties: Mucus contains sugars that keep potentially harmful germs in check.
+
+Biophysicist Katharina Ribbeck at the Massachusetts Institute of Technology has spent more than a decade exploring the biochemistry that happens within mucus. “Mucus piqued my interest because it is just this vastly understudied material that occupies a large surface area in our body,” Ribbeck said. The gel lubricates the esophagus, lines the stomach, helps sperm move past the cervix, and guards nasal tissues.
+
+Ribbeck and her colleagues study compounds called mucins in mucus. Mucins are long polymers, or molecular chains, densely studded with sugars. They “look like mini bottlebrushes,” Ribbeck said, except bristling with sugar molecules where whiskers would be.
+
+“Mucus has for too long been considered bad in general public, but also in medicine,” said Gunnar C. Hansson, who studies mucin compounds at the Unversity of Gothenburg in Sweden and was not a member of the team behind the new work. “Mucus and mucins are extremely complex to study and has been lagging almost all other types of biomedical research.”
+
+The textbook model of mucus — a filter that traps and eliminates microbes — isn’t entirely accurate. “We added microbes into mucus and we saw they don’t get trapped at all,” Ribbeck said. Inside a glob of mucus, bacteria swim freely, in a state the scientist describes as “planktonic.” That helps our immune systems. A lone drifter, as opposed to many germs gathered in tough-to-penetrate clumps, makes an easier target for immune cells.
+
+But not all bacteria need to be killed. Only a minority, in fact, are harmful. “We have trillions of microbes growing outside and inside of our body,” Ribbeck said. Microorganisms that live in the mucus of the digestive tract, for instance, help process food. “We provide the microbes the home, and in return, they do a service,” Ribbeck said. Mucus, she suspected, might be part of the process that domesticates germs into friendlier inhabitants.
+
+Kelsey Wheeler, a doctoral student in Ribbeck’s lab and a co-author of the paper, said that previous research showed purified mucins prevented several types of potentially harmful microbes from clumping up. The new study is the first, she said, to “identify that the glycan component” — meaning, the sugars grafted to the mucins — “is responsible for suppressing antagonistic microbial behaviors.”
+
+The scientists used several experiments to test the power of mucus. They embedded microbes in globs of mucus, what Ribbeck called “a three-dimensional mucus matrix." They cultured germs alongside human epithelial cells and mucus sugars. And they used the sugars to heal infected burn wounds in pigs. (To gather enough mucus to study, researchers collected donations of human saliva and scraped out pig guts.)
+
+Wheeler, Ribbeck and their colleagues tested how the sugars interacted with a bacteria called Pseudomonas aeruginosa. The microbe does not normally cause disease, except when it infects people with cystic fibrosis or compromised immune systems.
+
+The scientists wanted to know whether sugars worked by themselves, so they shook the glycans free from the polymer. (Imagine snipping the whiskers off a bottlebrush.) Pseudomonas reacted to the sugars by becoming less infectious. The mucus compounds suppressed various genetic pathways in the bacteria including factors related to killing other microbes, toxin secretion, cell-cell communication and clump formation.
+
+Mucus sugars are “like pixie dust,” Ribbeck said. "Oh my goodness, they’re so active.”
+
+Pediatrics professor Lars Bode, who studies sugars in breast milk at the University of California at San Diego and was not involved with this research, was intrigued by these abilities. Breast milk contains many small sugar molecules with similar structures, which Bode hypothesized may have similar effects when they are passed from mother to infant.
+
+“Instead of using antibiotics when these things turn against us, why don’t we prevent them from turning against us in the first place?” Bode said.
+
+Research not yet published suggests that the sugars can tame other types of microorganisms, including yeast and the bacteria Streptococcus mutans, Ribbeck said. The scientist was excited by the therapeutic potential of these molecules, she said, as more bacteria become resistant to drugs meant to kill them.
+
+“Changing their ability to cause infections could be a really potent strategy,” Ribbeck said. Call it the taming of the goo.
+
+Read more:
+
+Immigrants arrive with flourishing gut microbes. Then America’s diet trashes them.
+
+Dear Science: What’s the point of mucus?
+
+Scientists use gold nanoparticles to study the stickiness of snot
