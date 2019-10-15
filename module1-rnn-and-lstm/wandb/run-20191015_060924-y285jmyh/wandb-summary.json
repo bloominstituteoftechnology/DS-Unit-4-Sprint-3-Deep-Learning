@@ -1,0 +1,63 @@
+{
+    "graph": {
+        "_type": "graph",
+        "format": "keras",
+        "nodes": [
+            {
+                "name": "lstm_input",
+                "id": "lstm_input",
+                "class_name": "InputLayer",
+                "output_shape": [
+                    null,
+                    100,
+                    1
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "lstm",
+                "id": "lstm",
+                "class_name": "LSTM",
+                "output_shape": [
+                    null,
+                    256
+                ],
+                "num_parameters": 264192
+            },
+            {
+                "name": "dropout",
+                "id": "dropout",
+                "class_name": "Dropout",
+                "output_shape": [
+                    null,
+                    256
+                ],
+                "num_parameters": 0
+            },
+            {
+                "name": "dense",
+                "id": "dense",
+                "class_name": "Dense",
+                "output_shape": [
+                    null,
+                    99
+                ],
+                "num_parameters": 25443
+            }
+        ],
+        "edges": [
+            [
+                "lstm_input",
+                "lstm"
+            ],
+            [
+                "lstm",
+                "dropout"
+            ],
+            [
+                "dropout",
+                "dense"
+            ]
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "root": "/home/ubuntu/notebooks/DS-Unit-4-Sprint-3-Deep-Learning",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/hurshd0/DS-Unit-4-Sprint-3-Deep-Learning.git",
+        "commit": "204fec2fcf1cf8785fd6aafe7c1f30e814394aae"
+    },
+    "email": "hrdesai007@gmail.com",
+    "startedAt": "2019-10-15T06:11:54.739116",
+    "host": "ip-10-0-0-77",
+    "username": "ubuntu",
+    "executable": "/home/ubuntu/.conda/envs/U4-S1-NLP/bin/python",
+    "os": "Linux-4.15.0-1051-aws-x86_64-with-debian-buster-sid",
+    "python": "3.7.3",
+    "cpu_count": 8,
+    "args": [
+        "-f",
+        "/run/user/1000/jupyter/kernel-0d1b4e02-c54e-43d8-b9f2-32892677d8fd.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "major-pyramid-3",
+    "project": "angus",
+    "heartbeatAt": "2019-10-15T06:12:03.104292"
+}
