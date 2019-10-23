@@ -1,0 +1,45 @@
+The court insisted on unanimous opinions, for instance, in critical civil rights cases, such as Brown v. Board of Education, “Brown II,” and Cooper v. Aaron, decisions that found school segregation to be unconstitutional and ordered school districts to desegregate. It had done the same in Ex parte Quirin, a 1942 case that had upheld the government’s use of a military tribunal to try eight German saboteurs caught in the United States during World War II. We know from the justices’ private papers in each of these cases that it wasn’t that the justices each agreed with every word of the court’s opinions; they simply agreed that the cases were important enough that they shouldn’t be determined by a divided vote, and that the reasoning shouldn’t be called into question through separate opinions.
+
+That principle also guided the court in 1974, when it ruled 8 to 0 (with Justice William Rehnquist recused) against President Richard Nixon at the height of the Watergate scandal and ordered him to comply with a subpoena issued by the special prosecutor, in a decision written, at least publicly, by Chief Justice Warren Burger — whom Nixon himself had appointed. There was some debate within the White House over whether to comply and hand over the missing Watergate tapes, but the unanimity of the court’s ruling made clear that compliance was the only available outcome. Nixon turned over the recordings, and, thanks to the public impact of the “smoking gun” tape, he resigned three weeks later.
+
+AD
+
+AD
+
+One of the great unanswered questions about that Nixon episode is whether the president might have been more encouraged to defy a divided Supreme Court. Imagine, for example, a 5-to-3 decision where all three of the participating justices appointed by Nixon — Burger, Harry Blackmun and Lewis Powell — had dissented. Would Nixon’s political support have collapsed as quickly as it did? Would the Senate have voted to remove him if the House went on to impeach him?
+
+That hypothetical is getting less hypothetical by the day. It looks increasingly likely that the Supreme Court will eventually be asked to resolve at least one of the many disputes in which President Trump has either ordered current or former officials to refuse to comply with congressional subpoenas or in which he is seeking to bar a third party from voluntarily complying.
+
+Not only did the White House signal last Tuesday that it will no longer cooperate with any congressional requests, but the federal appeals court in Washington ruled Friday morning that the president could not block an accounting firm from turning over records of the work it has performed on Trump’s behalf — the first appellate ruling in one of these cases, setting the stage for a further appeal to the high court.
+
+AD
+
+AD
+
+The theory on which Trump has litigated these cases — that Congress is not allowed to conduct any oversight of his conduct except through an impeachment inquiry that has been formally initiated — represents a radical departure from long-settled understandings (including substantial prior Supreme Court precedent). It turns on the idea that before Congress can pursue any such oversight, it is required to formally vote to approve an impeachment inquiry, which is something that neither the Constitution, federal statutes nor the House’s own rules require. That’s why the district court had ruled against the president in the accounting firm case, a decision the D.C. Circuit affirmed by a 2-to-1 vote on Friday.
+
+But it was the vote in favor of the president in the appellate case that seems foreboding: Judge Neomi Rao, whom Trump appointed this year to fill the seat previously held by Justice Brett M. Kavanaugh, penned a 68-page dissent that broadly endorsed the president’s core legal theory. As she wrote, “Impeachment provides the exclusive method for Congress to investigate accusations of illegal conduct by impeachable officials, particularly with the aid of compulsory process.” In her view, the House is only allowed to issue subpoenas related to potential misconduct by the president of the United States once it has crossed a Rubicon that no law actually creates. And although Congress identified a “legitimate legislative purpose” for the subpoena (a purpose the legitimacy of which Rao did not dispute), that was irrelevant because the subpoena also sought information relevant to whether the president has acted unlawfully.
+
+The problem isn’t that Rao is wrong (although she is). The problem is that the argument her dissent advances would previously have been seen as analytically indefensible, but now has the backing of a life-tenured Article III judge on what’s often described as the nation’s “second-highest” court. However unsupported the logic is by the Constitution’s text, American history or judicial precedent, Rao’s dissent normalizes Trump’s radical theory and thereby moves the Overton window, at least within conservative legal circles.
+
+AD
+
+AD
+
+That’s especially significant here because it’s not likely that Rao was writing to convince her colleagues; even if Trump asks the full D.C. Circuit to reconsider Friday’s ruling, it’s highly unlikely that a majority of the appeals court agrees with Rao’s unusual claims.
+
+Rather, it seems that the audience for Rao’s dissent is the Supreme Court, including Justice Clarence Thomas (for whom she clerked). Indeed, feisty dissenting opinions in the courts of appeals often attract the attention of justices (and their clerks) and are sometimes even written much as advocates would write an application to the Supreme Court to take their appeal. One appellate judge has even gone so far as to coin a term for such opinions — “dissentals.”
+
+Of course, the justices may never reach the merits of this dispute (or any of the other subpoena cases). We’re already well into the court’s October 2019 term, and Trump could drag his feet on appealing Friday’s ruling — effectively keeping it from being enforced while also preventing the justices from taking up the case until their October 2020 term, when a decision would likely be mooted by the intervening congressional election (which, no matter who wins, will return a different Congress as of Jan. 3, 2021) even if it isn’t mooted by the result of the presidential election. But Rao’s dissent certainly raises the possibility that, were the court to reach the merits of one of these cases, at least some of the justices might be similarly inclined. Now, at least, such a vote wouldn’t be the first, and there’s a lengthy lower court opinion on which such a vote could rely.
+
+AD
+
+AD
+
+And that conclusion, in turn, provokes an alarming question: What if Trump loses one of these cases by a 5-to-4 vote, with Chief Justice John G. Roberts Jr. (about whom he has long been critical) joining the four justices appointed by Democratic presidents to produce a majority? Is it that far beyond the pale to imagine him defying a divided (as opposed to unanimous) court — especially if such a decision comes after he is reelected? And would congressional Republicans defend the court in such an instance, as opposed to the leader of their own party? If the president were to defy such a Supreme Court ruling without meaningful cost, it’s not hard to see how much damage that would inflict upon the court’s institutional authority, if not on the rule of law more generally.
+
+There are certainly those who think we are already in the midst of a constitutional crisis. But Friday’s ruling provides an ominous harbinger of what might be the real constitutional crisis to come.
+
+Read more:
+
+AD
