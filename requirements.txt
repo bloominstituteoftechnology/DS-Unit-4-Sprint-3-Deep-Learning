@@ -39,15 +39,13 @@ mkl-random==1.0.2
 mkl-service==2.0.2
 mock==3.0.5
 networkx==2.3
-newspaper3k==0.2.8
-nltk==3.4.4
 numpy==1.16.2
 pandas==0.24.2
 parso==0.5.0
 patsy==0.5.1
 pexpect==4.7.0
 pickleshare==0.7.5
-Pillow==6.1.0
+Pillow==6.2.0
 prompt-toolkit==2.0.9
 protobuf==3.8.0
 ptyprocess==0.6.0
