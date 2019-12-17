@@ -1,0 +1,18 @@
+Train on 809297 samples
+808960/809297 [============================>.] - ETA: 0s - loss: 2.3339
+----- Generating text after Epoch: 0
+----- diversity: 0.2
+----- Generating with seed: "ProjectGutenbergsTheCompleteWork"
+ProjectGutenbergsTheCompleteWorkinghereintheethereasthesetherestandtheearetheirtherestandthewilltheetherearesofheretheetheretheeareandthereastheerandtheerandthesearesomeretheetheewilltheearestaretheetherestandsandthereintheeandtheneveryourselfersandtobeartheneveryourearmortheselftheearenothereandtheyselfandthesearetheetheethereastheworldhereandwillstandtherebestandtheeverysaytheyselfandtheearesoftheworldtheewellseemerthatstherea
+----- diversity: 0.5
+----- Generating with seed: "ProjectGutenbergsTheCompleteWork"
+ProjectGutenbergsTheCompleteWorkentanderandmylordandsandYouwouldnotsotometheydungerThesearesonerentsancestAndtheyeretherementItheseverywhichandweeterandselfershallstillmanyourvenguretandfacehereinthouthesearetomyforelytheetherebenottheepearourHeresirrandsearsofallandIamthesebratherThenrestinoneLetmestandtheewillstourphisityouIlovesandthebettertheeTheseetwillnotAndtherecenterThoughtshavenothealthegalsentstrongshallnotwiththepirno
+----- diversity: 1.0
+----- Generating with seed: "ProjectGutenbergsTheCompleteWork"
+ProjectGutenbergsTheCompleteWorkPARDLOhowneverMusthereIndeverybuseanddedrewiteInloaksheadyrujoswerHerersinsateinconmunnoberAGRINCENToblewardHavesurdahaveknightProniosuchandYourearcleadandcorcearthegaonIfauldmoieasayofherourneversworkweknightyouhavecometyLorderanggordansirgooddantofwhatutifIhouremenbothaneboutyoustraightsbirdHencalCORTESTHULNOYouandellForlaigfInlownourandCarwelshousethegoldjustliveIsaritpaidtMarryfarsharmanwBring
+----- diversity: 1.2
+----- Generating with seed: "ProjectGutenbergsTheCompleteWork"
+ProjectGutenbergsTheCompleteWorkLuceafterAshewnumabetetisalpAstowneJithrichwithlinermakeALADYLLESallngserecarsbenceNoreveillbloodinthreusWhatcameBrecklObothLORDKENHAVTETThermsnucksayasmeteyShegotannedQUEENLSingdmaakforalineEDRIScySokwhichunworlcracthermortureMyhathsasanueliudExTirWhenmorthatwollpiongttodearmythinkorvoughtheepprocrowngobythysowerpdeliveyoubispleKingPARELLORDOLeWhosheirableAsyourmindasANCOBEAfastorbefeourrySTELRAN
+809297/809297 [==============================] - 384s 474us/sample - loss: 2.3338
+
+<tensorflow.python.keras.callbacks.History at 0x7ff97037f828>

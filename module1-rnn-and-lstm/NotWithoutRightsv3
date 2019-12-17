@@ -1,0 +1,348 @@
+​
+
+'''
+
+#class
+
+def on_epoch_end(epoch, _):
+
+    # Function invoked at end of each epoch. Prints generated text.
+
+    print()
+
+    print('----- Generating text after Epoch: %d' % epoch)
+
+​
+
+    start_index = np.random.randint(0, len(big_string) - maxlen - 1)
+
+    for diversity in [0.2, 0.5, 1.0, 1.2]:
+
+        print('----- diversity:', diversity)
+
+​
+
+        generated = ''
+
+        sentence = big_string[start_index: start_index + maxlen]
+
+        generated += sentence
+
+        print('----- Generating with seed: "' + sentence + '"')
+
+        sys.stdout.write(generated)
+
+​
+
+        for i in range(400):
+
+            x_pred = np.zeros((1, maxlen, len(chars)))
+
+            for t, char in enumerate(sentence):
+
+                x_pred[0, t, char_indices[char]] = 1.
+
+​
+
+            preds = model.predict(x_pred, verbose=0)[0]
+
+            next_index = sample(preds, diversity)
+
+            next_char = indices_char[next_index]
+
+​
+
+            sentence = sentence[1:] + next_char
+
+​
+
+            sys.stdout.write(next_char)
+
+            sys.stdout.flush()
+
+        print()
+
+​
+
+print_callback = LambdaCallback(on_epoch_end=on_epoch_end)
+
+'''
+
+'\n#class\ndef on_epoch_end(epoch, _):\n    # Function invoked at end of each epoch. Prints generated text.\n    print()\n    print(\'----- Generating text after Epoch: %d\' % epoch)\n\n    start_index = np.random.randint(0, len(big_string) - maxlen - 1)\n    for diversity in [0.2, 0.5, 1.0, 1.2]:\n        print(\'----- diversity:\', diversity)\n\n        generated = \'\'\n        sentence = big_string[start_index: start_index + maxlen]\n        generated += sentence\n        print(\'----- Generating with seed: "\' + sentence + \'"\')\n        sys.stdout.write(generated)\n\n        for i in range(400):\n            x_pred = np.zeros((1, maxlen, len(chars)))\n            for t, char in enumerate(sentence):\n                x_pred[0, t, char_indices[char]] = 1.\n\n            preds = model.predict(x_pred, verbose=0)[0]\n            next_index = sample(preds, diversity)\n            next_char = indices_char[next_index]\n\n            sentence = sentence[1:] + next_char\n\n            sys.stdout.write(next_char)\n            sys.stdout.flush()\n        print()\n\nprint_callback = LambdaCallback(on_epoch_end=on_epoch_end)\n'
+
+model.fit(X, y,
+
+          batch_size=512,
+
+          epochs=5,
+
+          callbacks=[print_callback])
+
+Train on 1114617 samples
+Epoch 1/5
+1114112/1114617 [============================>.] - ETA: 0s - loss: 1.8405
+----- Generating text after Epoch: 0
+----- diversity: 0.2
+----- Generating with seed: "ich fence the roots they grow by and defend them,
+Makes both my "
+ich fence the roots they grow by and defend them,
+Makes both my life the prince and wards and sender the man for your grace
+And since of the made the counter the stranger the world and the forture the word.
+
+                                                                                                                                                                                                                                                                
+----- diversity: 0.5
+----- Generating with seed: "ich fence the roots they grow by and defend them,
+Makes both my "
+ich fence the roots they grow by and defend them,
+Makes both my lords make the court him his supper.
+
+FIRST LORD.
+
+ [_Exit._]
+
+                                                                                                                                                                                                               [Herver Bericion.
+    I'th a lady to the compasity and light.
+    The prove the string the worth of him that be thing commanded.
+ 
+----- diversity: 1.0
+----- Generating with seed: "ich fence the roots they grow by and defend them,
+Makes both my "
+ich fence the roots they grow by and defend them,
+Makes both my look.
+
+FLOUTELTR.
+The han her peace'ry forny elle,
+That’s man by juscring to quetth sin erst,
+Sink lord; though our jaws, with my mould, bed, sir?
+
+ROMELER.
+There’s dothers. By done every chave begother?
+My Werder. Proomitine thy.
+
+IAMIL.
+Devil I good thy hern floues comy heichos,
+Why hath leaduly. But berrience thy bekies spo, her with,
+Will bore the alening so all forlly.
+But neede her poor last
+----- diversity: 1.2
+----- Generating with seed: "ich fence the roots they grow by and defend them,
+Makes both my "
+ich fence the roots they grow by and defend them,
+Makes both my Hargurain god to'ter stort.
+Quesinivingrow to wormy im but heride foul her!
+If the usmin.—Thus find Fron heajt, lock'd.
+
+AdTcy, any yet thou doing out my bost father?, What has thoy.
+
+ye may Enjex’d say mo-thrainss yeary. KI kid withyrend the work,
+Here Bear-bardin marbort indeed.
+
+To ill at be us updicy back. Lond,
+When now of, like your Sidgont!PYoKs sir, pfainy head deathed Jess, daves,
+
+Flap’s
+1114617/1114617 [==============================] - 740s 664us/sample - loss: 1.8404
+Epoch 2/5
+1114112/1114617 [============================>.] - ETA: 0s - loss: 1.5482
+----- Generating text after Epoch: 1
+----- diversity: 0.2
+----- Generating with seed: ", and thou sit in my throne?
+  YORK. It must and shall be so; co"
+, and thou sit in my throne?
+  YORK. It must and shall be so; come to hear the sons
+    And the part to her to the true of the part.
+                                                                                                                                                                                                                                                                                                                                           
+----- diversity: 0.5
+----- Generating with seed: ", and thou sit in my throne?
+  YORK. It must and shall be so; co"
+, and thou sit in my throne?
+  YORK. It must and shall be so; come to the same,
+    And the swift of the happiage.
+  BRUTUS. You be the tood to it.
+                                                                                                                                                                                                                                                                                                                            
+----- diversity: 1.0
+----- Generating with seed: ", and thou sit in my throne?
+  YORK. It must and shall be so; co"
+, and thou sit in my throne?
+  YORK. It must and shall be so; come; if sorm.
+    I piems liel for suck as
+
+            Exeunt
+
+                                   But I do leen do’d his world be
+
+Muriple, heart, but I must before men the whom your
+rughian what, When owrough, I’ll very onbli’d, sir, on the Lears
+The fiarts, O!
+Englate grean preyers by me, prayer.
+Condster, for the clear shame.
+
+ANTIPHOLUS OF ROCHEMONE.
+Domon? The world, thou wies’tes in the worl
+----- diversity: 1.2
+----- Generating with seed: ", and thou sit in my throne?
+  YORK. It must and shall be so; co"
+, and thou sit in my throne?
+  YORK. It must and shall be so; come?
+  BOON! GONURGBYRD. [_ENICIMANE.  Nay, after loverly dow I, the worsing
+    vile in! But hake to give bectorths,
+    If her, let hoous nargA'ns alysitis
+liking.
+  TOSTA SOLDBrow. This Jupor, Bullow. Airmat,
+    As not thou, than, or sin, dir.
+    Vouron. Eweas. He hat advajes my fnBel, unve to heads
+.
+    You hast go-mon's mush jesty, there's becelssw!
+    To mogmine hast of ortus; and say ye;
+1114617/1114617 [==============================] - 706s 634us/sample - loss: 1.5482
+Epoch 3/5
+1114112/1114617 [============================>.] - ETA: 0s - loss: 1.4879
+----- Generating text after Epoch: 2
+----- diversity: 0.2
+----- Generating with seed: " apprenticehood
+    To foreign passages; and in the end,
+    Hav"
+ apprenticehood
+    To foreign passages; and in the end,
+    Have be the shape to the prove the constant,
+    And with the stand of the stop of the father
+    And the stand and the true and a street
+    Whose princes and so must be the constance
+    And shall she should be shall the lips to the great stand
+    constant of the stand of the constant in the sons,
+    And the prove the warlish with the stors'd to the shall
+    That with the shall the shall be the 
+----- diversity: 0.5
+----- Generating with seed: " apprenticehood
+    To foreign passages; and in the end,
+    Hav"
+ apprenticehood
+    To foreign passages; and in the end,
+    Have show you must be love proceed the blood,
+    I am the with the silent the faith,
+                                                                                                                                                      Exeunt FALSTAFF
+
+  SERVANT. Have shall have it it her the life of my precents.
+    The world here shall be mine own with the fair
+    As stand the thrives to stand the
+----- diversity: 1.0
+----- Generating with seed: " apprenticehood
+    To foreign passages; and in the end,
+    Hav"
+ apprenticehood
+    To foreign passages; and in the end,
+    Have say gone betnersty, hessings.
+    The sumprand as tempest me swive me a name.
+    For my lord, that craive out with from the hate
+    ’Towxife beat thine; unles of she but for when, to thee;
+        I can crectly up dosom do'st fapim; common
+    A gotch is Ridoish heaving with new master's
+    I am like it and day, if then I dog,
+    Aptower necestell; crown him best.
+    But me in I will do swe
+----- diversity: 1.2
+----- Generating with seed: " apprenticehood
+    To foreign passages; and in the end,
+    Hav"
+ apprenticehood
+    To foreign passages; and in the end,
+    Have a to dien my cooselow knave;
+    She learned villamant. Theee bly hrink
+    Lendor senPy thine intend grazen
+    Welp-sowigh'd concoudly nobly has
+       plays so some by ear. Yea, are names, firecour that a Clebarch
+  To she till hie thratives? He juit,
+Quiniars with the   herps execus'd to Waz
+FrOcy have man. Saidor the free, my intape.
+Devery will be mne have free: I do  What; I on you
+Forery
+1114617/1114617 [==============================] - 685s 615us/sample - loss: 1.4879
+Epoch 4/5
+1114112/1114617 [============================>.] - ETA: 0s - loss: 1.4574
+----- Generating text after Epoch: 3
+----- diversity: 0.2
+----- Generating with seed: "woeful, woeful, woeful day.
+Most lamentable day, most woeful day"
+woeful, woeful, woeful day.
+Most lamentable day, most woeful day the bounds,
+With the streaves and the born and son,
+That the streep of the part of the part and straint
+To the son is the part and the son is the bold
+Which is the part of the son is the sons,
+And the stranger of the devil of the son is the
+                                                                                                                                                              
+----- diversity: 0.5
+----- Generating with seed: "woeful, woeful, woeful day.
+Most lamentable day, most woeful day"
+woeful, woeful, woeful day.
+Most lamentable day, most woeful day they all stronger on deeds
+the command to horse of love that the sons speak, and the poor son
+      one that that make me to your contective to the peace, sir,
+             Great so beard. Recence and the court.
+
+
+      DON PEDRO.
+      What I am not the leave of the son be to him. I have no death
+    The sight of the part the self stream and the brothers
+    That the poin and sons the disterst a
+----- diversity: 1.0
+----- Generating with seed: "woeful, woeful, woeful day.
+Most lamentable day, most woeful day"
+woeful, woeful, woeful day.
+Most lamentable day, most woeful day,
+In one more concapis,—; and that better born,
+Or we worn; if an other Past of ever loves of the
+    al caluying. For the King! Romeo, their great alsests.
+  ANNOL. Me come to give on.
+    What's the Pere ia!
+
+                 [_Exid. Repots]
+
+
+Sincert Panite_: Abasla of Conscent.
+
+ TROIL. you’ll not sure me
+So love. I’ll wardening tranch, age can if thou ma.
+Score seek now. And to it home, young
+----- diversity: 1.2
+----- Generating with seed: "woeful, woeful, woeful day.
+Most lamentable day, most woeful day"
+woeful, woeful, woeful day.
+Most lamentable day, most woeful day
+I countle hence to’t: my salRander and lugge un
+and die post’ yondernon?
+
+HOO ZEDO.
+The spoken's pration’s her.
+
+BERO.
+Well, follow.
+
+Re-press.
+Will you would be misidles; he, Dort nay;
+I have kis your lord repod, is stand ill
+  faulance, may now beet leave did, Harry I were to fatchboO pite
+inards?
+
+MAGUS.
+If you doth go be a hacks. Looking Sheeks grownus.
+
+our torse: crefus to your silf._1 with
+1114617/1114617 [==============================] - 706s 634us/sample - loss: 1.4574
+Epoch 5/5
+1114112/1114617 [============================>.] - ETA: 0s - loss: 1.4372
+----- Generating text after Epoch: 4
+----- diversity: 0.2
+----- Generating with seed: "he falcon her bells, so man hath his desires; and as pigeons
+   "
+he falcon her bells, so man hath his desires; and as pigeons
+                                                                                                                                                                                                                                                                                                                                                                                                                   
+----- diversity: 0.5
+----- Generating with seed: "he falcon her bells, so man hath his desires; and as pigeons
+   "
+he falcon her bells, so man hath his desires; and as pigeons
+      man all the consemption remember and strike.
+    The sweet the friend my son to the charge
+    The word men and bough age and her mark and true
+    And feast that in the sentents and and in me.
+                                                                                                                                               
