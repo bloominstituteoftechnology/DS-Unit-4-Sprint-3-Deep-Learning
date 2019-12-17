@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+intel-scipy = "*"
+jupyter = "*"
+mypy = "*"
+pycodestyle = "*"
+intel-numpy = "==1.15.1"
+pandas = "*"
+scikit-learn = "*"
+matplotlib = "*"
+tensorflow = "==2.0.0"
+keras = "*"
+category-encoders = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.6"
