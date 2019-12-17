@@ -1,0 +1,61 @@
+Train on 1114624 samples
+1114112/1114624 [============================>.] - ETA: 0s - loss: 1.8276
+----- Generating text after Epoch: 0
+----- diversity: 0.2
+----- Generating with seed: "﻿
+Project Gutenberg’s The Comple"
+﻿
+Project Gutenberg’s The Compleanio.
+
+CROMIO.
+The will see the strange of the stands.
+    The will be the send the sons the strength the strength,
+    The sent the senst the sentle shall the shall be see the wifter are the wiftle and the straight.
+    The world to the wifter the sentle of the world to the world the to the hands and the son the send the send the sentlemen and the sentle same the grave the sons all the wifted so 
+----- diversity: 0.5
+----- Generating with seed: "﻿
+Project Gutenberg’s The Comple"
+﻿
+Project Gutenberg’s The Compleuaral she are not the grace in thee,
+The sander of the hearth and the can may have a with heart,
+    With me to be the most now a show a timest, sir,
+    Thear mean to him, and but may heaven be deeding furth.
+    When the dreather that he will make a same compains,
+    The world and the stands to his broth a great all the wifford them and the one to the hearth some rown.
+
+THIRD CISTOR.
+To child t
+----- diversity: 1.0
+----- Generating with seed: "﻿
+Project Gutenberg’s The Comple"
+﻿
+Project Gutenberg’s The Compleoth;
+By a stempoos open to make.
+
+IS CLEEN.. I now shall lawest, ben mendceme.
+This inselve so would be upperowled;
+    A. . His most done, revesous, royforn.
+  KING LADI. Phal, yualten! Underes same, but I perciines,
+from the stund an tents apperains.
+
+PROpPHUS.
+Good wondowed that but I am myser;
+Vill an other in oue. Rides
+he to be fortle we widsan’d with no feast.
+  FLAWIO. Goven Causalme is no
+----- diversity: 1.2
+----- Generating with seed: "﻿
+Project Gutenberg’s The Comple"
+﻿
+Project Gutenberg’s The CompleinFaa
+    Good miseimen foo Lettus, of Jack-hearty hears, should gracNess,
+which do consctive, and we shal queen pray thus was,
+LeH war may founce. I not needom know
+whet if them! and you lany;. Tratwo in corntiline-rens arch EtVre,
+  WATAGRY. Mo ?
+AI. Good,, withomily. He'll do your hoving mend doth her
+I rivided doth ravies, serkenot take thy King,
+Hears thou no dopety run on at the vaniof! anre
+1114624/1114624 [==============================] - 397s 356us/sample - loss: 1.8275
+
+<tensorflow.python.keras.callbacks.History at 0x7f29144f8048>
