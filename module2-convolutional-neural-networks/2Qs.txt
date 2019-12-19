@@ -1,0 +1,4 @@
+1. Are technically inclined programmer types less concerned about AGI because they are more knowlegable of how it works (and thus aware of just how difficult a problem it is)?
+
+2. Do you think AI will be developed intentionally or that it will just ... happen as our specific implementations of AI (chess playing AI, face detecting AI, etc.) grow?
+
