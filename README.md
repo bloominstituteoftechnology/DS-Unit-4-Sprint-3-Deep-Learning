@@ -1,3 +1,5 @@
+> Don't forget to smile!
+
 # Unit 4 Sprint 3: Major Neural Network Architectures
 
 This week we will review several popular feed-forward neural network architectures that are common in commercial applications. 
