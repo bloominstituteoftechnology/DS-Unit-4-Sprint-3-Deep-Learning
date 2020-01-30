@@ -1,0 +1,27 @@
+{
+    "root": "/home/ec2-user/SageMaker/DS-Unit-4-Sprint-3-Deep-Learning",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/dggasque/DS-Unit-4-Sprint-3-Deep-Learning.git",
+        "commit": "f0337028a34fa30f87bd32ab1a466b0df2658edd"
+    },
+    "email": null,
+    "startedAt": "2020-01-29T18:27:55.703048",
+    "host": "ip-172-16-39-220",
+    "username": "ec2-user",
+    "executable": "/home/ec2-user/anaconda3/envs/tensorflow_p36/bin/python",
+    "os": "Linux-4.14.158-101.185.amzn1.x86_64-x86_64-with-glibc2.9",
+    "python": "3.6.5",
+    "cpu_count": 2,
+    "cuda": "10.0.130",
+    "args": [
+        "-f",
+        "/home/ec2-user/.local/share/jupyter/runtime/kernel-3872bbcc-f659-4bc2-99b2-497bf6b1a86c.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "atomic-darkness-29",
+    "project": "ds9-ae",
+    "heartbeatAt": "2020-01-29T18:50:18.092576"
+}

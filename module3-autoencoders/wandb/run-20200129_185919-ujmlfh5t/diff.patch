@@ -1,0 +1,361 @@
+nbdiff /tmp/xDHmQh_LS_DS_433_Autoencoders_Lecture.ipynb module3-autoencoders/LS_DS_433_Autoencoders_Lecture.ipynb
+--- /tmp/xDHmQh_LS_DS_433_Autoencoders_Lecture.ipynb  2020-01-29 18:59:21.949841
++++ module3-autoencoders/LS_DS_433_Autoencoders_Lecture.ipynb  2020-01-29 18:57:24.454254
+[34m## replaced /cells/6/execution_count:[0m
+[31m-  119
+[32m+  2
+
+[0m[34m## inserted before /cells/6/outputs/0:[0m
+[32m+  output:
+[32m+    output_type: stream
+[32m+    name: stdout
+[32m+    text:
+[32m+      WARNING:tensorflow:From /home/ec2-user/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/__init__.py:1467: The name tf.estimator.inputs is deprecated. Please use tf.compat.v1.estimator.inputs instead.
+[32m+      
+[32m+      WARNING:tensorflow:From /home/ec2-user/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+[32m+      Instructions for updating:
+[32m+      If using Keras pass *_constraint arguments to layers.
+
+[0m[34m## modified /cells/6/source:[0m
+[36m@@ -7,10 +7,13 @@[m [mfrom wandb.keras import WandbCallback[m
+ encoding_dim = 32  # 32 floats -> compression of factor 24.5, assuming the input is 784 floats[m
+ [m
+ # this is our input placeholder[m
+[32m+[m[32minput_img = Input(shape=(784,))[m
+ [m
+ # "encoded" is the encoded representation of the input[m
+[32m+[m[32mencoded = Dense(encoding_dim, activation="relu")(input_img)[m
+ [m
+ # "decoded" is the lossy reconstruction of the input[m
+[31m-[m
+[32m+[m[32mdecoded = Dense(784, activation='sigmoid')(encoded)[m
+ [m
+ # this model maps an input to its reconstruction[m
+[32m+[m[32mautoencoder = Model(input_img, decoded)[m
+[m
+
+[0m[34m## replaced /cells/7/execution_count:[0m
+[31m-  105
+[32m+  3
+
+[0m[34m## modified /cells/7/source:[0m
+[36m@@ -1 +1,2 @@[m
+ # this model maps an input to its encoded representation[m
+[32m+[m[32mencoder = Model(input_img, encoded)[m
+[m
+
+[0m[34m## inserted before /cells/8:[0m
+[32m+  code cell:
+[32m+    execution_count: 4
+[32m+    source:
+[32m+      # create a placeholder for an encoded (32-dimensional) input
+[32m+      encoded_input = Input(shape=(encoding_dim,))
+[32m+      
+[32m+      # retrieve the last layer of the autoencoder model
+[32m+      decoded_layer = autoencoder.layers[-1]
+[32m+      
+[32m+      # create the decoder model
+[32m+      decoder = Model(encoded_input, decoded_layer(encoded_input))
+
+[0m[34m## deleted /cells/8:[0m
+[31m-  code cell:
+[31m-    execution_count: 106
+[31m-    source:
+[31m-      # create a placeholder for an encoded (32-dimensional) input
+[31m-      
+[31m-      # retrieve the last layer of the autoencoder model
+[31m-      
+[31m-      # create the decoder model
+
+[0m[34m## replaced /cells/9/execution_count:[0m
+[31m-  113
+[32m+  5
+
+[0m[34m## inserted before /cells/9/outputs/0:[0m
+[32m+  output:
+[32m+    output_type: stream
+[32m+    name: stdout
+[32m+    text:
+[32m+      WARNING:tensorflow:From /home/ec2-user/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/python/ops/nn_impl.py:183: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+[32m+      Instructions for updating:
+[32m+      Use tf.where in 2.0, which has the same broadcast rule as np.where
+
+[0m[34m## replaced /cells/10/execution_count:[0m
+[31m-  108
+[32m+  6
+
+[0m[34m## replaced /cells/11/execution_count:[0m
+[31m-  109
+[32m+  7
+
+[0m[34m## replaced /cells/12/execution_count:[0m
+[31m-  118
+[32m+  8
+
+[0m[34m## inserted before /cells/12/outputs/0:[0m
+[32m+  output:
+[32m+    output_type: display_data
+[32m+    data:
+[32m+      text/html:
+[32m+        
+[32m+                        Logging results to <a href="https://wandb.com" target="_blank">Weights & Biases</a> <a href="https://docs.wandb.com/integrations/jupyter.html" target="_blank">(Documentation)</a>.<br/>
+[32m+                        Project page: <a href="https://app.wandb.ai/ds8/ds9-ae" target="_blank">https://app.wandb.ai/ds8/ds9-ae</a><br/>
+[32m+                        Run page: <a href="https://app.wandb.ai/ds8/ds9-ae/runs/09qgkyfe" target="_blank">https://app.wandb.ai/ds8/ds9-ae/runs/09qgkyfe</a><br/>
+[32m+                    
+[32m+      text/plain: <IPython.core.display.HTML object>
+[32m+  output:
+[32m+    output_type: stream
+[32m+    name: stderr
+[32m+    text:
+[32m+      Failed to query for notebook name, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable
+[32m+  output:
+[32m+    output_type: stream
+[32m+    name: stdout
+[32m+    text:
+[32m+      WARNING:tensorflow:OMP_NUM_THREADS is no longer used by the default Keras config. To configure the number of threads, use tf.config.threading APIs.
+[32m+  output:
+[32m+    output_type: error
+[32m+    ename: KeyboardInterrupt
+[32m+    traceback:
+[32m+      item[0]: [0;31m---------------------------------------------------------------------------[0m
+[32m+      item[1]: [0;31mKeyboardInterrupt[0m                         Traceback (most recent call last)
+[32m+      item[2]:
+[32m+        [0;32m<ipython-input-8-1d9cf64b693e>[0m in [0;36m<module>[0;34m()[0m
+[32m+        [1;32m      7[0m                 [0mvalidation_data[0m[0;34m=[0m[0;34m([0m[0mx_test[0m[0;34m,[0m [0mx_test[0m[0;34m)[0m[0;34m,[0m[0;34m[0m[0m
+[32m+        [1;32m      8[0m                 [0mverbose[0m [0;34m=[0m [0;32mFalse[0m[0;34m,[0m[0;34m[0m[0m
+[32m+        [0;32m----> 9[0;31m                 callbacks=[WandbCallback()])
+[32m+        [0m
+[32m+      item[3]:
+[32m+        [0;32m~/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py[0m in [0;36mfit[0;34m(self, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, steps_per_epoch, validation_steps, validation_freq, max_queue_size, workers, use_multiprocessing, **kwargs)[0m
+[32m+        [1;32m    731[0m         [0mmax_queue_size[0m[0;34m=[0m[0mmax_queue_size[0m[0;34m,[0m[0;34m[0m[0m
+[32m+        [1;32m    732[0m         [0mworkers[0m[0;34m=[0m[0mworkers[0m[0;34m,[0m[0;34m[0m[0m
+[32m+        [0;32m--> 733[0;31m         use_multiprocessing=use_multiprocessing)
+[32m+        [0m[1;32m    734[0m [0;34m[0m[0m
+[32m+        [1;32m    735[0m   def evaluate(self,
+[32m+      item[4]:
+[32m+        [0;32m~/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_arrays.py[0m in [0;36mfit[0;34m(self, model, x, y, batch_size, epochs, verbose, callbacks, validation_split, validation_data, shuffle, class_weight, sample_weight, initial_epoch, steps_per_epoch, validation_steps, validation_freq, **kwargs)[0m
+[32m+        [1;32m    673[0m         [0mvalidation_steps[0m[0;34m=[0m[0mvalidation_steps[0m[0;34m,[0m[0;34m[0m[0m
+[32m+        [1;32m    674[0m         [0mvalidation_freq[0m[0;34m=[0m[0mvalidation_freq[0m[0;34m,[0m[0;34m[0m[0m
+[32m+        [0;32m--> 675[0;31m         steps_name='steps_per_epoch')
+[32m+        [0m[1;32m    676[0m [0;34m[0m[0m
+[32m+        [1;32m    677[0m   def evaluate(self,
+[32m+      item[5]:
+[32m+        [0;32m~/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/wandb/keras/__init__.py[0m in [0;36mnew_arrays[0;34m(*args, **kwargs)[0m
+[32m+        [1;32m     94[0m             [0;32mfor[0m [0mcbk[0m [0;32min[0m [0mcbks[0m[0;34m:[0m[0;34m[0m[0m
+[32m+        [1;32m     95[0m                 [0mset_wandb_attrs[0m[0;34m([0m[0mcbk[0m[0;34m,[0m [0;34m([0m[0mval_inputs[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m,[0m [0mval_targets[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0m
+[32m+        [0;32m---> 96[0;31m         [0;32mreturn[0m [0mold_arrays[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0m
+[32m+        [0m[1;32m     97[0m [0;34m[0m[0m
+[32m+        [1;32m     98[0m     [0;32mdef[0m [0mnew_generator[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[32m+      item[6]:
+[32m+        [0;32m~/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_arrays.py[0m in [0;36mmodel_iteration[0;34m(model, inputs, targets, sample_weights, batch_size, epochs, verbose, callbacks, val_inputs, val_targets, val_sample_weights, shuffle, initial_epoch, steps_per_epoch, validation_steps, validation_freq, mode, validation_in_fit, prepared_feed_values_from_dataset, steps_name, **kwargs)[0m
+[32m+        [1;32m    392[0m [0;34m[0m[0m
+[32m+        [1;32m    393[0m         [0;31m# Get outputs.[0m[0;34m[0m[0;34m[0m[0m
+[32m+        [0;32m--> 394[0;31m         [0mbatch_outs[0m [0;34m=[0m [0mf[0m[0;34m([0m[0mins_batch[0m[0;34m)[0m[0;34m[0m[0m
+[32m+        [0m[1;32m    395[0m         [0;32mif[0m [0;32mnot[0m [0misinstance[0m[0;34m([0m[0mbatch_outs[0m[0;34m,[0m [0mlist[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0m
+[32m+        [1;32m    396[0m           [0mbatch_outs[0m [0;34m=[0m [0;34m[[0m[0mbatch_outs[0m[0;34m][0m[0;34m[0m[0m
+[32m+      item[7]:
+[32m+        [0;32m~/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/python/keras/backend.py[0m in [0;36m__call__[0;34m(self, inputs)[0m
+[32m+        [1;32m   3474[0m [0;34m[0m[0m
+[32m+        [1;32m   3475[0m     fetched = self._callable_fn(*array_vals,
+[32m+        [0;32m-> 3476[0;31m                                 run_metadata=self.run_metadata)
+[32m+        [0m[1;32m   3477[0m     [0mself[0m[0;34m.[0m[0m_call_fetch_callbacks[0m[0;34m([0m[0mfetched[0m[0;34m[[0m[0;34m-[0m[0mlen[0m[0;34m([0m[0mself[0m[0;34m.[0m[0m_fetches[0m[0;34m)[0m[0;34m:[0m[0;34m][0m[0;34m)[0m[0;34m[0m[0m
+[32m+        [1;32m   3478[0m     output_structure = nest.pack_sequence_as(
+[32m+      item[8]:
+[32m+        [0;32m~/anaconda3/envs/tensorflow_p36/lib/python3.6/site-packages/tensorflow_core/python/client/session.py[0m in [0;36m__call__[0;34m(self, *args, **kwargs)[0m
+[32m+        [1;32m   1470[0m         ret = tf_session.TF_SessionRunCallable(self._session._session,
+[32m+        [1;32m   1471[0m                                                [0mself[0m[0;34m.[0m[0m_handle[0m[0;34m,[0m [0margs[0m[0;34m,[0m[0;34m[0m[0m
+[32m+        [0;32m-> 1472[0;31m                                                run_metadata_ptr)
+[32m+        [0m[1;32m   1473[0m         [0;32mif[0m [0mrun_metadata[0m[0;34m:[0m[0;34m[0m[0m
+[32m+        [1;32m   1474[0m           [0mproto_data[0m [0;34m=[0m [0mtf_session[0m[0;34m.[0m[0mTF_GetBuffer[0m[0;34m([0m[0mrun_metadata_ptr[0m[0;34m)[0m[0;34m[0m[0m
+[32m+      item[9]: [0;31mKeyboardInterrupt[0m: 
+
+[0m[34m## deleted /cells/12/outputs/0-2:[0m
+[31m-  output:
+[31m-    output_type: display_data
+[31m-    data:
+[31m-      text/html:
+[31m-        
+[31m-                    Notebook configured with <a href="https://wandb.com" target="_blank">W&B</a>. You can <a href="https://app.wandb.ai/ds5/mnist_autoencoder/runs/wgvmhq5t" target="_blank">open</a> the run page, or call <code>%%wandb</code>
+[31m-                    in a cell containing your training loop to display live results.  Learn more in our <a href="https://docs.wandb.com/docs/integrations/jupyter.html" target="_blank">docs</a>.
+[31m-                
+[31m-      text/plain: <IPython.core.display.HTML object>
+[31m-  output:
+[31m-    output_type: stream
+[31m-    name: stderr
+[31m-    text:
+[31m-      E0918 10:55:19.873255 4443284928 jupyter.py:96] Failed to query for notebook name, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable
+[31m-      W0918 10:55:20.740216 4443284928 callbacks.py:241] Method (on_train_batch_end) is slow compared to the batch update (0.870614). Check your callbacks.
+[31m-      W0918 10:55:20.748113 4443284928 callbacks.py:241] Method (on_train_batch_end) is slow compared to the batch update (0.435325). Check your callbacks.
+[31m-  output:
+[31m-    output_type: execute_result
+[31m-    execution_count: 118
+[31m-    data:
+[31m-      text/plain: <tensorflow.python.keras.callbacks.History at 0x1a3e915400>
+
+[0m[34m## modified /cells/12/source:[0m
+[36m@@ -1,9 +1,9 @@[m
+[31m-wandb.init(project="mnist_autoencoder", entity="ds5")[m
+[32m+[m[32mwandb.init(project="ds9-ae", entity="ds8")[m
+ [m
+[31m-autoencoder.fit(..., ...,[m
+[32m+[m[32mautoencoder.fit(x_train, x_train,[m
+                 epochs=1000,[m
+                 batch_size=256,[m
+                 shuffle=True,[m
+[31m-                validation_data=(..., ...),[m
+[32m+[m[32m                validation_data=(x_test, x_test),[m
+                 verbose = False,[m
+[31m-                callbacks=...)[m
+[m
+[32m+[m[32m                callbacks=[WandbCallback()])[m
+[m
+
+[0m[34m## replaced /cells/13/execution_count:[0m
+[31m-  101
+[32m+  12
+
+[0m[34m## modified /cells/13/source:[0m
+[36m@@ -1,2 +1,3 @@[m
+ # encode and decode some digits[m
+ # note that we take them from the *test* set[m
+[32m+[m[32mdecoded_imgs = autoencoder.predict(x_test)[m
+[m
+
+[0m[34m## replaced /cells/14/execution_count:[0m
+[31m-  102
+[32m+  13
+
+[0m[34m## inserted before /cells/14/outputs/0:[0m
+[32m+  output:
+[32m+    output_type: display_data
+[32m+    data:
+[32m+      image/png: iVBORw0K...<snip base64, md5=e839882d7a36b86a...>
+[32m+      text/plain: <Figure size 1440x288 with 20 Axes>
+
+[0m[34m## deleted /cells/14/outputs/0:[0m
+[31m-  output:
+[31m-    output_type: display_data
+[31m-    data:
+[31m-      image/png: iVBORw0K...<snip base64, md5=b494ff25c618fda3...>
+[31m-      text/plain: <Figure size 1440x288 with 20 Axes>
+[31m-    metadata (unknown keys):
+[31m-      needs_background: light
+
+[0m[34m## inserted before /cells/20:[0m
+[32m+  code cell:
+[32m+    execution_count: 14
+[32m+    source:
+[32m+      input_img = Input(shape=(784,))
+[32m+      encoded = Dense(128, activation='selu')(input_img)
+[32m+      encoded = Dense(64, activation='selu')(encoded)
+[32m+      
+[32m+      encoded = Dense(32, activation='relu')(encoded) # The dry strawberry
+[32m+      
+[32m+      decoded = Dense(64, activation='selu')(encoded)
+[32m+      decoded = Dense(128, activation='selu')(decoded)
+[32m+      decoded = Dense(784, activation='sigmoid')(decoded)
+[32m+  code cell:
+[32m+    source:
+[32m+      # compile & fit model
+[32m+      
+[32m+      autoencoder = Model(input_img, decoded)
+[32m+      autoencoder.compile(loss='binary_crossentropy',
+[32m+                          optimizer='nadam')
+[32m+      wandb.init(project="ds9-ae", entity="ds8")
+[32m+      autoencoder.fit(x_train, x_train,
+[32m+                      epochs=500,
+[32m+                      batch_size=256,
+[32m+                      shuffle=True,
+[32m+                      validation_data=(x_test, x_test),
+[32m+                      verbose = False,
+[32m+                      callbacks=[WandbCallback()])
+[32m+    outputs:
+[32m+      output 0:
+[32m+        output_type: display_data
+[32m+        data:
+[32m+          text/html:
+[32m+            
+[32m+                            Logging results to <a href="https://wandb.com" target="_blank">Weights & Biases</a> <a href="https://docs.wandb.com/integrations/jupyter.html" target="_blank">(Documentation)</a>.<br/>
+[32m+                            Project page: <a href="https://app.wandb.ai/ds8/ds9-ae" target="_blank">https://app.wandb.ai/ds8/ds9-ae</a><br/>
+[32m+                            Run page: <a href="https://app.wandb.ai/ds8/ds9-ae/runs/zasiohyc" target="_blank">https://app.wandb.ai/ds8/ds9-ae/runs/zasiohyc</a><br/>
+[32m+                        
+[32m+          text/plain: <IPython.core.display.HTML object>
+[32m+      output 1:
+[32m+        output_type: stream
+[32m+        name: stderr
+[32m+        text:
+[32m+          Failed to query for notebook name, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable
+
+[0m[34m## deleted /cells/20-21:[0m
+[31m-  code cell:
+[31m-    source:
+[31m-      input_img = Input(shape=(784,))
+[31m-  code cell:
+[31m-    source:
+[31m-      # compile & fit model
+
+[0m[34m## inserted before /cells/24:[0m
+[32m+  code cell:
+[32m+    source:
+[32m+      from keras.layers import Input, Dense, Conv2D, MaxPooling2D, UpSampling2D
+[32m+      from keras.models import Model
+[32m+      from keras import backend as K
+[32m+      
+[32m+      # Create Model 
+[32m+      input_img = Input(shape=(28,28,1))
+[32m+      l1 = Conv2D(16, (3,3), activation='relu', padding='same')(input_img)
+[32m+      l2 = MaxPooling2D((2,2), padding='same')(l1)
+[32m+      l3 = Conv2D(8, (3, 3), activation='relu', padding='same')(l2)
+[32m+      l4 = MaxPooling2D((2, 2), padding='same')(l3)
+[32m+      l5 = Conv2D(8, (3, 3), activation='relu', padding='same')(l4)
+[32m+      encoded = MaxPooling2D((2, 2), padding='same')(l5)
+[32m+      # at this point the representation is (4, 4, 8i.e. 128-dimensional representation
+[32m+      x = Conv2D(8, (3, 3), activation='relu', padding='same')(encoded)
+[32m+      x = UpSampling2D((2, 2))(x)
+[32m+      x = Conv2D(8, (3, 3), activation='relu', padding='same')(x)
+[32m+      x = UpSampling2D((2, 2))(x)
+[32m+      x = Conv2D(16, (3, 3), activation='relu')(x)
+[32m+      x = UpSampling2D((2, 2))(x)
+[32m+      decoded = Conv2D(1, (3, 3), activation='sigmoid', padding='same')(x)
+[32m+      autoencoder = Model(input_img, decoded)
+[32m+      
+[32m+      autoencoder.compile(optimizer='nadam', loss='binary_crossentropy')
+[32m+      
+[32m+      autoencoder.summary()
+
+[0m[34m## deleted /cells/24:[0m
+[31m-  code cell:
+[31m-    source:
+[31m-      from keras.layers import Input, Dense, Conv2D, MaxPooling2D, UpSampling2D
+[31m-      from keras.models import Model
+[31m-      from keras import backend as K
+[31m-      
+[31m-      # Create Model 
+[31m-      
+[31m-      autoencoder.compile(optimizer='adadelta', loss='binary_crossentropy')
+
+[0m[34m## modified /cells/26/source:[0m
+[36m@@ -1,4 +1,4 @@[m
+[31m-wandb.init(project="mnist_autoencoder", entity="ds5")[m
+[32m+[m[32mwandb.init(project="ds9-ae", entity="ds8")[m
+ [m
+ autoencoder.fit(x_train, x_train,[m
+                 epochs=100,[m
+
+[0m[34m## modified /metadata/kernelspec/display_name:[0m
+[31m-  U4-S3-DNN (Python 3.7)
+[32m+  conda_tensorflow_p36
+
+[0m[34m## modified /metadata/kernelspec/name:[0m
+[31m-  u4-s3-dnn
+[32m+  conda_tensorflow_p36
+
+[0m[34m## modified /metadata/language_info/version:[0m
+[31m-  3.7.3
+[32m+  3.6.5
+
+[0m[34m## replaced /nbformat_minor:[0m
+[31m-  2
+[32m+  4
+
+[0m
