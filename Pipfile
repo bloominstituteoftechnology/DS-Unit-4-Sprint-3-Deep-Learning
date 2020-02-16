@@ -17,8 +17,7 @@ ipython = "*"
 scipy = "*"
 scikit-image = "*"
 ipykernel = "*"
-keras = "*"
-tensorflow-gpu = "*"
+tensorflow = "*"
 
 [requires]
 python_version = "3.7"
