@@ -1,0 +1,4 @@
+[default]
+project = mnist_autoencoder
+entity = ds5
+

@@ -1,0 +1,8 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.8.28
+    is_jupyter_run: true
+    python_version: 3.6.5

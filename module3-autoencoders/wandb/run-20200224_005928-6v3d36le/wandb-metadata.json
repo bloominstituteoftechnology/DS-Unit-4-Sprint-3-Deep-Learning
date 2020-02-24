@@ -1,0 +1,27 @@
+{
+    "root": "/home/ec2-user/SageMaker/DS-Unit-4-Sprint-3-Deep-Learning",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/jonathanmendoza-tx/DS-Unit-4-Sprint-3-Deep-Learning.git",
+        "commit": "9541de8516863826dcf93c1e3dacef15f9f89013"
+    },
+    "email": null,
+    "startedAt": "2020-02-24T00:59:18.578552",
+    "host": "ip-172-16-7-198",
+    "username": "ec2-user",
+    "executable": "/home/ec2-user/anaconda3/envs/amazonei_tensorflow_p36/bin/python",
+    "os": "Linux-4.14.165-103.209.amzn1.x86_64-x86_64-with-glibc2.9",
+    "python": "3.6.5",
+    "cpu_count": 2,
+    "cuda": "10.0.130",
+    "args": [
+        "-f",
+        "/home/ec2-user/.local/share/jupyter/runtime/kernel-191caa0f-7b21-4124-a65f-12b29f642ba5.json"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "name": "zesty-wood-66",
+    "project": "mnist_autoencoder",
+    "heartbeatAt": "2020-02-24T00:59:35.171633"
+}
