@@ -1,0 +1,67 @@
+
+
+A classic way to lie with charts is by starting a bar chart with a non-zero baseline, as in the graphic on the left, which is adapted from a chart produced by Fox Business in 2011. By starting the y-axis at 34 percent, small differences can be exaggerated. (Alberto Cairo/How Charts Lie)
+
+Alberto Cairo wants to make you smarter about charts.
+
+He’s a professor of visual journalism at the University of Miami, and his third book, “How Charts Lie,” is geared toward helping people make better sense of the charts, maps and other data visualizations that flood our social media feeds and nightly newscasts.
+
+In the current political environment, he notes in the book, misinformation is everywhere. A slick chart can add a veneer of authority to shoddy or misleading data, he said, so he made it his goal to help readers avoid the common interpretive pitfalls that took him years to figure out for himself.
+
+Earlier this month I spoke with Cairo about the book, his background and some of the misleading viral visuals he’s come across recently. The conversation below has been edited for length and clarity.
+
+Tell me a bit about your background, like how you ended up in this field?
+
+I studied journalism, originally with the goal of working in radio (I love listening to the radio and podcasts). However, I’ve always been in love with visual communication. My dad taught me how to draw a bit, and I read comic books and science books with tons of cutaway illustrations and visual explainers when I was a kid.
+
+I guess I absorbed all that and, in the last year of my B.A., a professor of mine who knew that I can sketch stuff up recommended me to be an intern in the infographics department at the local newspaper of the city where I was born, La Coruña, in Spain. The newspaper is La Voz de Galicia. After that, it was just a matter of practicing, learning, studying, making mistakes and trying to learn from them.
+
+Who is this book for? What audience did you have in mind when you wrote it?
+
+I wrote the book with different “personas” in mind, to use the parlance common in design research. For instance, my dad and my mom. They are both educated professionals (a medical doctor and the head of nursing in several hospitals, both retired).
+
+My dad and my mom both know a bit about numbers, but I observed in people like them (and even myself, I admit), the tendency to take charts, maps and graphs at face value, assuming that “a picture is worth a thousand words,” a myth I warn against in the book.
+
+For some reason many people assume that numbers and, as an extension of numbers, the graphics that represent them, are “objective” and carry truth. The goal of the book is to disabuse people of this intuition. Sure, visualizations are amazing and they can open your eyes to insights you hadn’t noticed before (and I exemplify that in the book), but they need to be approached carefully as written text or speech.
+
+Why write this book now? Have you been noticing a lot of misinformation, or maybe misinterpretation, among the public on this visual stuff?
+
+Visual misinformation has always been something that has worried me. I addressed it in previous books. However, I’ve noticed an increase in the past few years in countries I’ve lived in: Spain, Brazil, and the U.S. I noticed that governments, companies and individuals have become more adept at designing misleading charts.
+
+Just see this example from yesterday:
+
+“Real median household income—the amount earned by those in the very middle—hit $65,084 for the 12 months ending in July. That’s the highest level ever and a gain of $4,144, or 6.8%, since Mr. Trump took office.” @WSJ pic.twitter.com/Sna9DHbnyV — Ivanka Trump (@IvankaTrump) October 2, 2019
+
+Notice the absurd trend line during Obama’s presidency.
+
+So, walk me through this — what’s happening in this chart? What’s misleading about it?
+
+If we want to have an informed conversation about economic development, wages, jobs, et cetera, we need to consider not just the quantitative realities, but also the qualitative ones: What hides behind the slump at the beginning of [Barack] Obama’s presidency and the recovery at its end? The biggest economic crisis since the Depression.
+
+That’s why the curve is so steep. Tracing a trend line between one point at its beginning and the end of the presidency is absurd just because that line doesn’t describe at all the realities behind the data. Moreover, the growth during [Donald] Trump’s presidency is simply an extension of trends that were existing before: You can see that if we trace a trend line since 2010 up to the present.
+
+This is not to diminish more recent growth. The fact that the economy has continued improving steadily, that employment has gone up, that wages have continued increasing … that’s great news on its own. But it’s not something that began in November 2016 or January 2017. It’s an inherited situation.
+
+One thing that struck me about this chart is it appears to be from the Wall Street Journal? So you have to assume that their intention wasn’t to lead folks astray here, but it ended up happening anyway?
+
+Exactly! And that’s a point in the book, which contains mostly charts that were NOT designed in purpose to mislead anyone but that are at risk to be misread, particularly if they are related to deeply held ideological beliefs. As I wrote, charts often lie because we are all prone to lying to ourselves.
+
+The good news is that I believe that we can curb this impulse a bit if we are more informed and more careful, and that’s what I try to teach in the book. And I’d add: even teaching to MYSELF, as most of the mistakes when reading charts that I describe in the book are mistakes I have made myself.
+
+So this kind of segues into my next question: the title is how charts lie, which is a great title. But like, who is doing the lying, exactly?
+
+A more accurate title would have been How Charts Mislead, Deceive, and Lie, How We Lie to Ourselves With Them, How We Can Avoid That Happening, and How We Can Use Charts Instead to Inform Meaningful Conversations About Urgent Issues. But nobody would buy a book like that!
+
+
+
+One of the more egregious examples of a lying chart, left, was shared by Utah Republican Jason Chaffetz in a 2015 congressional hearing. The lines were drawn to different scales, falsely implying that Planned Parenthood performed more abortions than cancer screenings. Cairo redrew the chart, right, using a proper scale. (Alberto Cairo/How Charts Lie)
+
+But yes, charts do lie. Because reading a chart is not something that happens in the chart itself. It happens in the interface between the visual object AND your brain. And our brains are very prone to seeing what is not really there, to project onto charts what we already believe, to read beyond what the chart is showing (that’s why I came up with the mantra: “a chart shows only what it shows and nothing else.” Everything else that you see in a chart is often in your brain, not in the chart).
+
+How do you generally recommend people approach charts, like the “shocking” or “stunning” viral charts they may see on their social feeds? What would you want a person who’s considering sharing a chart like this to do?
+
+The Sagan Standard is timeless: Extraordinary claims require extraordinary evidence. The more striking, shocking or stunning a chart is, the higher our scrutiny of it should be. In the book, I describe things to look into when facing any chart: checking the source of its data (if a chart doesn’t mention the source, ignore it, period); also, if you have a minute, visit the source itself to see whether the chart is measuring what it claims to be measuring. In one of my previous books, I have this example of several sources of worldwide data on intrafamily violence against women reporting hugely different rates for the same countries. Why? Because they defined “violence” in different ways. In the case of the source reporting lower rates, they were only counting physical violence; in the case of the source with higher rates, they also counted verbal violence, and other forms.
+
+After assessing what the chart is truly measuring and showing, we need to pay attention to how the information is displayed: Is the chart or map distorting the data, maybe to emphasize points that favor the author’s opinions or agendas? Have the axis of a graph been cropped to exaggerate or minimize differences or variations?
+
+The most important point, though, is to remind ourselves that we all project; therefore the mantra “a chart shows only what it shows and nothing else” is a good heuristic. The more the apparent message of a chart aligns with your ideological beliefs, the more you should force yourself to read it carefully, just because we are all prone to liking that chart beforehand and take it at face value. We all tend to do the opposite: scrutinize more closely charts whose message we disagree with. It’s a lot of work, but it’s worth it.
