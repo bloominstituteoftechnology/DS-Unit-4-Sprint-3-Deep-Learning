@@ -19,6 +19,7 @@ ipython = "*"
 scipy = "*"
 scikit-image = "*"
 ipykernel = "*"
+google-images-download = "*"
 
 [requires]
 python_version = "3.7"
