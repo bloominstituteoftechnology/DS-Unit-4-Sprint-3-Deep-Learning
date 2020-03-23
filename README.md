@@ -9,7 +9,7 @@ This week we will review several popular feed-forward neural network architectur
 * Module 2: CNNs
   - Objectives: 
       1. Describe convolutions and convolutions within neural networks
-      2. Apply pre-trained CNNs to object detection problems
+      2. Apply pre-trained CNNs to image classification problems
 * Module 3: Autoencoders
   - Objectives:
       1. Describe the componenets of an autoencoder
@@ -20,3 +20,6 @@ This week we will review several popular feed-forward neural network architectur
       1. Describe the history of artificial intelligence research
       2. Know the important research achievements in AI
       3. Delineate the ethnical challenges faces AI
+
+
+Hello world testing
