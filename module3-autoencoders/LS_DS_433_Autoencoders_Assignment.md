@@ -11,4 +11,9 @@ Please review the following resources:
 - https://www.youtube.com/watch?v=JRuNA2eK7w0
 - https://www.youtube.com/watch?v=SGSOCuByo24 (This one is long FYI)
 
+This doesn't raise any questions for me. just the observation that humans like
+to be impressed with ourselves and like to worry. So, something
+we create that is so impressive that we have to worry about extinction because
+of it is the perfect combination to attract attention and resources, which benefits most
+those who make the most noise.
 
