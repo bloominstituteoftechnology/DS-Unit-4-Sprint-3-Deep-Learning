@@ -10,4 +10,4 @@ Read About the History of General Artificial Intelligence Research, the future o
 - https://www.youtube.com/watch?v=JRuNA2eK7w0
 https://www.youtube.com/watch?v=SGSOCuByo24 (This one is long FYI)
 
-Enjoy!  :coffee_parrot:
+Enjoy!  :coffee:
