@@ -10,4 +10,8 @@ Read About the History of General Artificial Intelligence Research, the future o
 * [Pascal's Mugging](https://www.youtube.com/watch?v=JRuNA2eK7w0)
 * [Yann LeCunn Interview](https://www.youtube.com/watch?v=SGSOCuByo24)
 
+1. Why do you think it took ~10 years to get any sort of funding for AI if the first AI program showed great promise to the future of technology?
+2. As AI starts to improve each year, what are your thoughts on the potential thought of AI robots replacing humans for jobs and potentially leaving people unemployed?
+3. As seen in movies of robots "taking over the world", do you think that could be a possibility in the future with the constant improvement of AGI?
+
 Enjoy!  :coffee:
