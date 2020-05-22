@@ -11,3 +11,11 @@ Read About the History of General Artificial Intelligence Research, the future o
 * [Yann LeCunn Interview](https://www.youtube.com/watch?v=SGSOCuByo24)
 
 Enjoy!  :coffee:
+
+Questions:
+
+1. Moore's Law is predicted to surpass physical restraints in the near future, i.e: a transistor would have to be smaller than a silicon atom to continue to meet the projections by Moore's Law. What do you think will be the next step in increasing computing power now that the physical limit is starting to be reached?
+
+2. Your thoughts on future human-like AI? Which portrayal of human-like AIs do you think will be the one humans actually create? (Asimov, Ultron, Chappie, etc.)
+
+3.
