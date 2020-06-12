@@ -11,3 +11,11 @@ Read About the History of General Artificial Intelligence Research, the future o
 * [Yann LeCunn Interview](https://www.youtube.com/watch?v=SGSOCuByo24)
 
 Enjoy!  :coffee:
+
+
+My Thoughts....
+
+What are some of the things we can do right now to help with create the saftey with the advances in AI?
+Right now computers can be trained to do one task better than humans can do, but it has been hard for computers to be able to do
+multiple tasks better than a human.  What do you feel is the thing that limits the computer to learn to do more than one task better than
+a human?
