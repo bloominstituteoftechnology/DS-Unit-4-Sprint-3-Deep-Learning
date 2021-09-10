@@ -15,11 +15,11 @@ This week we will review several popular feed-forward neural network architectur
       1. Describe the componenets of an autoencoder
       2. Train an autoencoder
       3. Apply an autoencoder to a basic information retreval problem
-* Module 4: Artificial General Intelligence & the Future
+* Module 4: LSTMs for Time Series Forecasting
   - Objectives: 
-      1. Describe the history of artificial intelligence research
-      2. Know the important research achievements in AI
-      3. Delineate the ethnical challenges faces AI
+      1. Understand how to prepare time series data for model ingestion (sliding train-test split) 
+      2. Understand how to use a LSTM model for time series forecasting applications
+      3. Understand the importance of seasonality and trends in time series applications.
 
 
 Hello world testing
