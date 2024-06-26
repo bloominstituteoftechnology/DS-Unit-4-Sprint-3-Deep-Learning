@@ -160,8 +160,8 @@ class data_cleaning_toolkit(object):
         # create data containers for x and y 
         # default values will all be zero ( i.e. look up docs for np.zeros() )
         # recall that a value of zero is equivalent to False in Python 
-        x = np.zeros(x_dims, dtype=np.bool)
-        y = np.zeros(y_dims, dtype=np.bool)
+        x = np.zeros(x_dims, dtype=bool)
+        y = np.zeros(y_dims, dtype=bool)
 
         # populate x and y with 1 (from a Boolean perspective, 1 and True are the same thing)
         # iterative through the index and sequence
